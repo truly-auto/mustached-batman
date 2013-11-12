@@ -48,8 +48,11 @@ namespace _481Project
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
-        {            
-            this.tabControl1.Items.Add(textBox1.Text);
+        {
+            TabItem ti = new TabItem();
+            ti.Header = this.textBox1.Text;
+            ti.Content  = new Tab();
+            this.tabControl1.Items.Insert(tabControl1.Items.Count - 1, ti);
         }
 
         /// <summary>

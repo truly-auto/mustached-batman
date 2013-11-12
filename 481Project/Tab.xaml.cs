@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace _481Project
 {
     /// <summary>
-    /// Interaction logic for TabTemplate.xaml
+    /// Interaction logic for Tab.xaml
     /// </summary>
-    public partial class TabTemplate : UserControl
+    public partial class Tab : UserControl
     {
-        public TabTemplate()
+        public Tab()
         {
             InitializeComponent();
         }

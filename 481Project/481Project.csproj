@@ -60,6 +60,8 @@
     </Compile>
     <Compile Include="LogInWindow.xaml.cs">
       <DependentUpon>LogInWindow.xaml</DependentUpon>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="Roster.xaml.cs">
       <DependentUpon>Roster.xaml</DependentUpon>
@@ -67,8 +69,8 @@
     <Compile Include="Stats.xaml.cs">
       <DependentUpon>Stats.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TabTemplate.xaml.cs">
-      <DependentUpon>TabTemplate.xaml</DependentUpon>
+    <Compile Include="Tab.xaml.cs">
+      <DependentUpon>Tab.xaml</DependentUpon>
     </Compile>
     <Page Include="Calendar.xaml">
       <SubType>Designer</SubType>
@@ -77,6 +79,9 @@
     <Page Include="LogInWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -98,7 +103,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TabTemplate.xaml">
+    <Page Include="Tab.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="_481Project.Tab"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="256" d:DesignWidth="743" xmlns:my="clr-namespace:_481Project">
+<DockPanel Height="256" Name="dockPanel1" Width="743">
+        <my:Roster x:Name="roster1" Width="248"/>
+        <my:Calendar x:Name="calendar1" Width="248" />
+        <my:Stats Height="256" x:Name="stats1" Width="248" />
+    </DockPanel>
+</UserControl>
