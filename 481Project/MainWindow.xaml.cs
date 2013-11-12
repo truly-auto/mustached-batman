@@ -22,6 +22,9 @@ namespace _481Project
         public MainWindow()
         {
             InitializeComponent();
+
+            //call the login procedure
+            login();
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -47,6 +50,22 @@ namespace _481Project
         private void button3_Click(object sender, RoutedEventArgs e)
         {            
             this.tabControl1.Items.Add(textBox1.Text);
+        }
+
+        /// <summary>
+        /// User must login before they can do anything
+        /// </summary>
+        private void login()
+        {
+            LogInWindow loginWindow = new LogInWindow();
+            bool? success = loginWindow.ShowDialog();
+
+            //If the login fails then the app should close immediately, without doing anything else
+            if (success == null || success == false)
+                Application.Current.Shutdown();
+
+            //else return as everything is ok
+            return;
         }
     }
 }
