@@ -22,11 +22,31 @@ namespace _481Project
         public MainWindow()
         {
             InitializeComponent();
-            Roster r = new Roster();
-            this.dockPanel1.Children.Add(r);
-            Stats s = new Stats();
-            this.dockPanel1.Children.Add(s);
+        }
 
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            tabControl1.Items.Add("New Team");
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void expander1_Expanded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void expander2_Expanded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {            
+            this.tabControl1.Items.Add(textBox1.Text);
         }
     }
 }

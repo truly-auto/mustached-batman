@@ -5,13 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="325" d:DesignWidth="393" Height="400" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="300">
-    <Grid Height="400" Width="300">
+    <Grid Height="400" Width="246">
         <Label Content="Stats
-               " FontSize="36" Height="57" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label1" VerticalAlignment="Top" Width="126" />
-        <Button Content="Add" Height="21" HorizontalAlignment="Left" Margin="173,38,0,0" Name="add" VerticalAlignment="Top" Width="56" Click="add_Click" />
+               " FontSize="32" Height="57" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label1" VerticalAlignment="Top" Width="126" FontWeight="Bold" />
+        <Button Content="Add" Height="21" HorizontalAlignment="Left" Margin="119,38,0,0" Name="add" VerticalAlignment="Top" Width="56" Click="add_Click" />
         <Button Content="Remove" Height="21" HorizontalAlignment="Right" Margin="0,38,12,0" Name="remove" VerticalAlignment="Top" Width="53" Click="remove_Click" />
-        <ScrollViewer Height="323" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="276" VerticalScrollBarVisibility="Auto" CanContentScroll="True">
-            <StackPanel Height="Auto" Name="stackPanel" Width="Auto" Background="#FFA6C2EB"></StackPanel>
+        <ScrollViewer Height="166" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="222" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
+            <StackPanel Height="166" Name="stackPanel" Width="Auto" Background="#FFA6C2EB"></StackPanel>
         </ScrollViewer>
     </Grid>
 </UserControl>
