@@ -1,13 +1,14 @@
 ﻿<Window x:Class="_481Project.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="400" Width="800" xmlns:my="clr-namespace:_481Project">
+        Title="MainWindow" Height="400" Width="800" xmlns:my="clr-namespace:_481Project" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="12*" />
-            <ColumnDefinition Width="693*" />
+            <ColumnDefinition Width="13*" />
+            <ColumnDefinition Width="339*" />
+            <ColumnDefinition Width="426*" />
         </Grid.ColumnDefinitions>
-        <TabControl Height="293" HorizontalAlignment="Left" Margin="0,56,0,0" Name="tabControl1" VerticalAlignment="Top" Width="753" Grid.Column="1">
+        <TabControl Height="293" HorizontalAlignment="Left" Margin="0,56,0,0" Name="tabControl1" VerticalAlignment="Top" Width="753" Grid.Column="1" Grid.ColumnSpan="2">
             <TabItem Header="Team 1" Name="tabItem1" Height="20" Width="100">
                 <DockPanel Height="256" Name="dockPanel1" Width="743">
                     <my:Tab x:Name="tab1" />
@@ -29,13 +30,21 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <Canvas Height="34" HorizontalAlignment="Left" Margin="0,9,0,0" Name="canvas1" VerticalAlignment="Top" Width="753" Grid.Column="1">
+        <Canvas Height="34" HorizontalAlignment="Left" Margin="0,9,0,0" Name="canvas1" VerticalAlignment="Top" Width="753" Grid.Column="1" Grid.ColumnSpan="2">
             <TextBlock Canvas.Left="0" Canvas.Top="0" Height="34" Name="textBlock1" Text="Welcome User" Width="128" FontWeight="Bold" FontSize="18" />
-            <Expander Canvas.Left="175" Canvas.Top="3" Header="Messages" Height="25" Name="expander1" Width="89" Expanded="expander1_Expanded">
-                <Grid></Grid>
+            <Expander Canvas.Left="175" Canvas.Top="3" Header="Messages" Height="Auto" Name="messagesExpander" Width="Auto" Expanded="expander1_Expanded" IsExpanded="False" Opacity="1">
+                <StackPanel Height="150" Name="stackPanel1" Width="Auto" Background="#FF96EF8D" Opacity="1">
+                    <TextBlock Height="23" Name="textBlock4" Text="Msg One" />
+                    <TextBlock Height="23" Name="textBlock5" Text="Msg Two" />
+                    <TextBlock Height="23" Name="textBlock6" Text="Msg Three" />
+                </StackPanel>
             </Expander>
-            <Expander Canvas.Left="270" Canvas.Top="3" Header="Notifications" Height="25" Name="expander2" Width="98" Expanded="expander2_Expanded">
-                <Grid />
+            <Expander Canvas.Left="270" Canvas.Top="3" Header="Notifications" Height="Auto" Name="NotificationsExpander" Width="Auto" Expanded="expander2_Expanded" IsExpanded="False">
+                <StackPanel Height="150" Name="stackPanel2" Width="Auto" Background="#FFF57474">
+                    <TextBlock Height="23" Name="textBlock7" Text="Notification One" />
+                    <TextBlock Height="23" Name="textBlock8" Text="Notification Two" />
+                    <TextBlock Height="23" Name="textBlock9" Text="Notification Three" />
+                </StackPanel>
             </Expander>
             <Button Canvas.Left="621" Canvas.Top="6" Content="Logout" Height="23" Name="button2" Width="126" Click="button2_Click" />
         </Canvas>

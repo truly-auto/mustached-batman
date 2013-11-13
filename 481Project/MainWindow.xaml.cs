@@ -69,6 +69,16 @@ namespace _481Project
 
             //else return as everything is ok
             return;
+        }
+
+        private void tabControl1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
         } 
     }
 }
