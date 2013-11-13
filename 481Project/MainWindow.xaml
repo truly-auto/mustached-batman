@@ -31,6 +31,8 @@
                     <Button Content="Create" Height="24" HorizontalAlignment="Left" Margin="587,0,0,6" Name="button3" VerticalAlignment="Bottom" Width="71" Click="button3_Click" />
                     <TextBlock Height="26" Margin="24,70,402,0" Name="textBlock11" Text="Invite Two" VerticalAlignment="Top" Width="Auto" />
                     <TextBlock Height="26" Margin="24,86,402,0" Name="textBlock12" Text="Invite Three" VerticalAlignment="Top" Width="Auto" />
+                    <Button Content="Ignore" Height="23" HorizontalAlignment="Left" Margin="222,193,0,0" Name="button4" VerticalAlignment="Top" Width="75" />
+                    <Button Content="Accept" Height="23" HorizontalAlignment="Left" Margin="132,193,0,0" Name="button5" VerticalAlignment="Top" Width="75" />
                 </Grid>
             </TabItem>
         </TabControl>
