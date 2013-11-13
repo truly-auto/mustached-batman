@@ -16,17 +16,21 @@
             </TabItem>
             <TabItem Header="Add/Create Team">
                 <Grid Height="242" Name="grid1" Width="668">
-                    <GridSplitter Height="242" HorizontalAlignment="Left" Margin="318,0,0,0" Name="gridSplitter1" VerticalAlignment="Top" Width="15" />
+                    <GridSplitter Height="242" HorizontalAlignment="Left" Margin="318,0,0,0" Name="gridSplitter1" VerticalAlignment="Top" Width="2" Background="Black" />
                     <TextBlock Height="23" HorizontalAlignment="Left" Margin="24,10,0,0" Name="textBlock2" Text="Pending Teams" VerticalAlignment="Top" Width="89" FontWeight="Bold" />
-                    <ScrollViewer Height="71" HorizontalAlignment="Left" Margin="24,54,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="259" />
+                    <ScrollViewer Height="102" HorizontalAlignment="Left" Margin="24,54,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="259" Background="#FFC7FFFE" ToolTip="Tooltip">
+                        <TextBlock Height="26" Name="textBlock10" Text="Invite One" Width="Auto" VerticalAlignment="Top" />
+                    </ScrollViewer>
                     <TextBlock FontWeight="Bold" Height="23" HorizontalAlignment="Right" Margin="0,10,219,0" Name="textBlock3" Text="Create A Team" VerticalAlignment="Top" Width="89" />
-                    <TextBox Height="23" HorizontalAlignment="Left" Margin="360,133,0,0" Name="textBox1" VerticalAlignment="Top" Width="212" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="360,133,0,0" Name="textBox1" VerticalAlignment="Top" Width="212" Background="#FFFCAEEE" />
                     <Label Content="Team name :" Height="24" HorizontalAlignment="Left" Margin="360,111,0,0" Name="label1" VerticalAlignment="Top" Width="109" />
                     <Button Content="Upload" Height="26" HorizontalAlignment="Left" Margin="578,81,0,0" Name="button1" VerticalAlignment="Top" Width="68" />
                     <Label Content="Team Logo :" Height="28" HorizontalAlignment="Left" Margin="360,30,0,0" Name="label3" VerticalAlignment="Top" />
                     <Image Height="53" HorizontalAlignment="Left" Margin="360,54,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="75" Source="/481Project;component/Images/1242115138_405.jpg" />
-                    <TextBox Height="25" HorizontalAlignment="Right" Margin="0,82,96,0" Name="textBox3" VerticalAlignment="Top" Width="131" />
+                    <TextBox Height="25" HorizontalAlignment="Right" Margin="0,82,96,0" Name="textBox3" VerticalAlignment="Top" Width="131" Background="#FFFCAEEE" />
                     <Button Content="Create" Height="24" HorizontalAlignment="Left" Margin="587,0,0,6" Name="button3" VerticalAlignment="Bottom" Width="71" Click="button3_Click" />
+                    <TextBlock Height="26" Margin="24,70,402,0" Name="textBlock11" Text="Invite Two" VerticalAlignment="Top" Width="Auto" />
+                    <TextBlock Height="26" Margin="24,86,402,0" Name="textBlock12" Text="Invite Three" VerticalAlignment="Top" Width="Auto" />
                 </Grid>
             </TabItem>
         </TabControl>
