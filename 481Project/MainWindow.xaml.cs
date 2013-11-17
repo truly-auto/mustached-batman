@@ -32,9 +32,13 @@ namespace _481Project
             tabControl1.Items.Add("New Team");
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void logoutButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            //Hide the main window and run the login process again
+            //If the login succeeds then show the window again
+            this.Hide();
+            login();
+            this.Show();
         }
 
         private void expander1_Expanded(object sender, RoutedEventArgs e)
@@ -47,12 +51,15 @@ namespace _481Project
 
         }
 
-        private void button3_Click(object sender, RoutedEventArgs e)
+        private void teamCreateButton_Click(object sender, RoutedEventArgs e)
         {
             TabItem ti = new TabItem();
             ti.Header = this.textBox1.Text;
             ti.Content  = new Tab();
             this.tabControl1.Items.Insert(tabControl1.Items.Count - 1, ti);
+            
+            //After a new team is created, clear the name textbox
+            this.textBox1.Text = "";
         }
 
         /// <summary>

@@ -28,7 +28,7 @@
                     <Label Content="Team Logo :" Height="28" HorizontalAlignment="Left" Margin="360,30,0,0" Name="label3" VerticalAlignment="Top" />
                     <Image Height="53" HorizontalAlignment="Left" Margin="360,54,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="75" Source="/481Project;component/Images/1242115138_405.jpg" />
                     <TextBox Height="25" HorizontalAlignment="Right" Margin="0,82,96,0" Name="textBox3" VerticalAlignment="Top" Width="131" Background="#FFFCAEEE" />
-                    <Button Content="Create" Height="24" HorizontalAlignment="Left" Margin="587,0,0,6" Name="button3" VerticalAlignment="Bottom" Width="71" Click="button3_Click" />
+                    <Button Content="Create" Height="24" HorizontalAlignment="Left" Margin="587,0,0,6" Name="teamCreateButton" VerticalAlignment="Bottom" Width="71" Click="teamCreateButton_Click" />
                     <TextBlock Height="26" Margin="24,70,402,0" Name="textBlock11" Text="Invite Two" VerticalAlignment="Top" Width="Auto" />
                     <TextBlock Height="26" Margin="24,86,402,0" Name="textBlock12" Text="Invite Three" VerticalAlignment="Top" Width="Auto" />
                     <Button Content="Ignore" Height="23" HorizontalAlignment="Left" Margin="222,193,0,0" Name="button4" VerticalAlignment="Top" Width="75" />
@@ -52,7 +52,7 @@
                     <TextBlock Height="23" Name="textBlock9" Text="Notification Three" />
                 </StackPanel>
             </Expander>
-            <Button Canvas.Left="621" Canvas.Top="6" Content="Logout" Height="23" Name="button2" Width="126" Click="button2_Click" />
+            <Button Canvas.Left="621" Canvas.Top="6" Content="Logout" Height="23" Name="logoutButton" Width="126" Click="logoutButton_Click" />
         </Canvas>
     </Grid>
 </Window>
