@@ -58,6 +58,12 @@
     <Compile Include="Calendar.xaml.cs">
       <DependentUpon>Calendar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomCalendar.xaml.cs">
+      <DependentUpon>CustomCalendar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Date.xaml.cs">
+      <DependentUpon>Date.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LogInWindow.xaml.cs">
       <DependentUpon>LogInWindow.xaml</DependentUpon>
     </Compile>
@@ -70,7 +76,18 @@
     <Compile Include="Tab.xaml.cs">
       <DependentUpon>Tab.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WeekDay.xaml.cs">
+      <DependentUpon>WeekDay.xaml</DependentUpon>
+    </Compile>
     <Page Include="Calendar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomCalendar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Date.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -99,6 +116,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Tab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WeekDay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

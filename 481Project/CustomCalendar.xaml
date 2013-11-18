@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="_481Project.CustomCalendar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="700" xmlns:my="clr-namespace:_481Project">
+    <WrapPanel Height="550" Name="wrapPanel1" Width="700" Visibility="Visible">
+        <my:WeekDay x:Name="weekDay1" />
+        <my:WeekDay x:Name="weekDay2" />
+        <my:WeekDay x:Name="weekDay3" />
+        <my:WeekDay x:Name="weekDay4" />
+        <my:WeekDay x:Name="weekDay5" />
+        <my:WeekDay x:Name="weekDay6" />
+        <my:WeekDay x:Name="weekDay7" />
+        <my:Date x:Name="date1" />
+        <my:Date x:Name="date2" />
+        <my:Date x:Name="date3" />
+        <my:Date x:Name="date4" />
+        <my:Date x:Name="date5" />
+        <my:Date x:Name="date6" />
+        <my:Date x:Name="date7" />
+        <my:Date x:Name="date8" />
+        <my:Date x:Name="date9" />
+        <my:Date x:Name="date10" />
+        <my:Date x:Name="date11" />
+        <my:Date x:Name="date12" />
+        <my:Date x:Name="date13" />
+        <my:Date x:Name="date14" />
+        <my:Date x:Name="date15" />
+        <my:Date x:Name="date16" />
+        <my:Date x:Name="date17" />
+        <my:Date x:Name="date18" />
+        <my:Date x:Name="date19" />
+        <my:Date x:Name="date20" />
+        <my:Date x:Name="date21" />
+        <my:Date x:Name="date22" />
+        <my:Date x:Name="date23" />
+        <my:Date x:Name="date24" />
+        <my:Date x:Name="date25" />
+        <my:Date x:Name="date26" />
+        <my:Date x:Name="date27" />
+        <my:Date x:Name="date28" />
+        <my:Date x:Name="date29" />
+        <my:Date x:Name="date30" />
+        <my:Date x:Name="date31" />
+        <my:Date x:Name="date32" />
+    </WrapPanel>
+</UserControl>
