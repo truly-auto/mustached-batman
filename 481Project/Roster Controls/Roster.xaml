@@ -5,11 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" d:DesignHeight="635" d:DesignWidth="250">
     <Grid Height="635" Width="250">
-        <Button Content="Add" Height="21" HorizontalAlignment="Left" Margin="126,40,0,0" Name="add" VerticalAlignment="Top" Width="56" Click="add_Click" />
-        <Button Content="Remove" Height="21" HorizontalAlignment="Right" Margin="0,40,12,0" Name="remove" VerticalAlignment="Top" Width="53" Click="remove_Click" />
-        <Label Content="Roster" Height="57" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" Width="108" FontSize="32" FontWeight="Bold" />
+        <Label Content="Roster" Height="57" HorizontalAlignment="Left" Margin="142,0,0,0" Name="label1" VerticalAlignment="Top" Width="108" FontSize="32" FontWeight="Bold" />
         <ScrollViewer Height="558" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="226" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
             <StackPanel Height="558" Name="stackPanel" Width="Auto" Background="#FFDBBFBF"></StackPanel>
         </ScrollViewer>
+        <Button Content="Edit" Height="26" Name="button1" Width="73" Click="edit_Click" Margin="12,31,165,578" />
     </Grid>
 </UserControl>

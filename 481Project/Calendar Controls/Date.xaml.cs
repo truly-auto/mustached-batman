@@ -28,7 +28,8 @@ namespace _481Project
         private void border1_MouseDown(object sender, MouseButtonEventArgs e)
         {
             //Use this to open up our modal window.
-            EditCalendarWindow EditWindow = new EditCalendarWindow();
+            var EditWindow = new EditCalendarWindow();
+            EditWindow.ShowDialog();
         }
 
     }

@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using _481Project.Calendar_Controls;
 
 namespace _481Project
 {
@@ -23,7 +24,7 @@ namespace _481Project
         {
             InitializeComponent();
         }
-
+/* Used for basic demonstration
         private void add_Click(object sender, RoutedEventArgs e)
         {
 
@@ -37,6 +38,15 @@ namespace _481Project
         {
             int c = this.stackPanel.Children.Count;                               
             if (c > 0) { this.stackPanel.Children.RemoveAt(c-1); }                //Removes last added elements
+        }
+*/
+        private void edit_Click(object sender, RoutedEventArgs e)
+        {
+            var EditWindow = new RosterEditWindow();
+            var p = new Point();
+            EditWindow.Top =this.PointToScreen(p).Y;
+            EditWindow.Left = this.PointToScreen(p).X;
+            EditWindow.ShowDialog();
         }
 
     }

@@ -9,20 +9,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using _481Project.Calendar_Controls;
 
-namespace _481Project
+namespace _481Project.Calendar_Controls
 {
     /// <summary>
-    /// Interaction logic for Calendar.xaml
+    /// Interaction logic for RosterEditWindow.xaml
     /// </summary>
-    public partial class Calendar : UserControl
+    public partial class RosterEditWindow : Window
     {
-        public Calendar()
+        public RosterEditWindow()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -70,6 +70,9 @@
     <Compile Include="Calendar Controls\Date.xaml.cs">
       <DependentUpon>Date.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Calendar Controls\RosterEditWindow.xaml.cs">
+      <DependentUpon>RosterEditWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LogInWindow.xaml.cs">
       <DependentUpon>LogInWindow.xaml</DependentUpon>
     </Compile>
@@ -102,6 +105,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Calendar Controls\Date.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Calendar Controls\RosterEditWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

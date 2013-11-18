@@ -23,7 +23,7 @@ namespace _481Project.Calendar_Controls
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void cancel_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
