@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="_481Project.Calendar_Controls.Month"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="75" d:DesignWidth="700">
+    <Grid Height="75" Width="700" >
+        <Button Content="Previous Month" Height="25" HorizontalAlignment="Left" Margin="12,25,0,0" Name="button1" VerticalAlignment="Top" Width="100" Click="button1_Click" />
+        <Button Content="Next Month" Height="25" HorizontalAlignment="Right" Margin="0,25,12,0" Name="button2" VerticalAlignment="Top" Width="100" Click="button2_Click" />
+        <Label Content="November" Height="48" HorizontalAlignment="Left" Margin="192,12,0,0" Name="label1" VerticalAlignment="Top" Width="339" FontWeight="Bold" FontSize="24" HorizontalContentAlignment="Center" />
+    </Grid>
+</UserControl>

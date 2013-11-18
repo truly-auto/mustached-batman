@@ -6,7 +6,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="50" d:DesignWidth="100" FontSize="13" Background="#00000000">
     <Grid>
-        <Label Height="30" HorizontalAlignment="Left" Margin="12,8,0,0" Name="Day" VerticalAlignment="Top" Width="78" FontSize="15" HorizontalContentAlignment="Center" DataContext="{Binding}" />
-        <Border BorderBrush="Silver" BorderThickness="5" Height="50" HorizontalAlignment="Left" Name="border1" VerticalAlignment="Top" Width="100" />
+        <Label Height="30" HorizontalAlignment="Left" Margin="12,8,0,0" Name="Day" VerticalAlignment="Top" Width="78" FontSize="12" HorizontalContentAlignment="Center" DataContext="{Binding}" Content="Weekday" />
+        <Border BorderBrush="SlateGray" BorderThickness="1" Height="50" HorizontalAlignment="Left" Name="border1" VerticalAlignment="Top" Width="100" />
     </Grid>
 </UserControl>
