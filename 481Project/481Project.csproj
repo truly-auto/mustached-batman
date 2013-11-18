@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Calendar Controls\EditCalendarWindow.xaml.cs">
+      <DependentUpon>EditCalendarWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Calendar Controls\Month.xaml.cs">
       <DependentUpon>Month.xaml</DependentUpon>
     </Compile>
@@ -82,6 +85,10 @@
     <Compile Include="Calendar Controls\WeekDay.xaml.cs">
       <DependentUpon>WeekDay.xaml</DependentUpon>
     </Compile>
+    <Page Include="Calendar Controls\EditCalendarWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Calendar Controls\Month.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

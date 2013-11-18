@@ -9,27 +9,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using _481Project.Calendar_Controls;
 
-namespace _481Project
+namespace _481Project.Calendar_Controls
 {
     /// <summary>
-    /// Interaction logic for Date.xaml
+    /// Interaction logic for EditCalendarWindow.xaml
     /// </summary>
-    public partial class Date : UserControl
+    public partial class EditCalendarWindow : Window
     {
-        public Date()
+        public EditCalendarWindow()
         {
             InitializeComponent();
         }
 
-        private void border1_MouseDown(object sender, MouseButtonEventArgs e)
+        private void button1_Click(object sender, RoutedEventArgs e)
         {
-            //Use this to open up our modal window.
-            EditCalendarWindow EditWindow = new EditCalendarWindow();
+            this.Close();
         }
-
     }
 }

@@ -7,7 +7,7 @@
              d:DesignHeight="325" d:DesignWidth="250" Height="635" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="249">
     <Grid Height="635" Width="250">
         <Label Content="Stats
-               " FontSize="32" Height="57" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label1" VerticalAlignment="Top" Width="126" FontWeight="Bold" />
+               " FontSize="32" Height="57" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label1" VerticalAlignment="Top" Width="103" FontWeight="Bold" />
         <Button Content="Add" Height="21" HorizontalAlignment="Left" Margin="119,38,0,0" Name="add" VerticalAlignment="Top" Width="56" Click="add_Click" />
         <Button Content="Remove" Height="21" HorizontalAlignment="Right" Margin="0,38,12,0" Name="remove" VerticalAlignment="Top" Width="53" Click="remove_Click" />
         <ScrollViewer Height="558" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="222" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
