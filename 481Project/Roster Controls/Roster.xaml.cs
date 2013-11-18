@@ -12,6 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using _481Project.Calendar_Controls;
+using _481Project.Roster_Controls;
 
 namespace _481Project
 {
@@ -40,11 +41,21 @@ namespace _481Project
             if (c > 0) { this.stackPanel.Children.RemoveAt(c-1); }                //Removes last added elements
         }
 */
-        private void edit_Click(object sender, RoutedEventArgs e)
+
+        private void button1_Click(object sender, RoutedEventArgs e)
         {
-            var EditWindow = new RosterEditWindow();
+            var EditWindow = new RosterAddWindow();
             var p = new Point();
-            EditWindow.Top =this.PointToScreen(p).Y;
+            EditWindow.Top = this.PointToScreen(p).Y;
+            EditWindow.Left = this.PointToScreen(p).X;
+            EditWindow.ShowDialog();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            var EditWindow = new RosterRemoveWindow();
+            var p = new Point();
+            EditWindow.Top = this.PointToScreen(p).Y;
             EditWindow.Left = this.PointToScreen(p).X;
             EditWindow.ShowDialog();
         }

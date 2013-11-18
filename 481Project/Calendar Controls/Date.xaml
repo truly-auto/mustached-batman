@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="60" d:DesignWidth="60" MouseDown="border1_MouseDown">
+             d:DesignHeight="60" d:DesignWidth="60">
     <Grid>
         <TextBlock Height="30" HorizontalAlignment="Left" Name="Day" Text="" VerticalAlignment="Top" Width="60" />
         <TextBlock Height="32" HorizontalAlignment="Left" Margin="0,28,0,0" Name="Info" Text="" VerticalAlignment="Top" Width="60" />

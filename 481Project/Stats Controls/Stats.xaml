@@ -8,10 +8,10 @@
     <Grid Height="635" Width="250">
         <Label Content="Stats
                " FontSize="32" Height="57" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label1" VerticalAlignment="Top" Width="103" FontWeight="Bold" />
-        <Button Content="Add" Height="21" HorizontalAlignment="Left" Margin="119,38,0,0" Name="add" VerticalAlignment="Top" Width="56" Click="add_Click" />
-        <Button Content="Remove" Height="21" HorizontalAlignment="Right" Margin="0,38,12,0" Name="remove" VerticalAlignment="Top" Width="53" Click="remove_Click" />
         <ScrollViewer Height="558" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="222" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
             <StackPanel Height="558" Name="stackPanel" Width="Auto" Background="#FFA6C2EB"></StackPanel>
         </ScrollViewer>
+        <Button Background="#FF65E265" Content="+" Height="23" HorizontalAlignment="Left" Margin="174,33,0,0" Name="button1" VerticalAlignment="Top" Width="27" Click="add_Click" />
+        <Button Background="#FFCB1A1A" Content="-" Height="23" HorizontalAlignment="Left" Margin="207,33,0,0" Name="button2" VerticalAlignment="Top" Width="27" Click="remove_Click" />
     </Grid>
 </UserControl>

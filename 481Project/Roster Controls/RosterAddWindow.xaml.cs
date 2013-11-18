@@ -16,9 +16,9 @@ namespace _481Project.Calendar_Controls
     /// <summary>
     /// Interaction logic for RosterEditWindow.xaml
     /// </summary>
-    public partial class RosterEditWindow : Window
+    public partial class RosterAddWindow : Window
     {
-        public RosterEditWindow()
+        public RosterAddWindow()
         {
             InitializeComponent(); 
         }

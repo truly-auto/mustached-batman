@@ -58,6 +58,9 @@
     <Compile Include="Calendar Controls\EditCalendarWindow.xaml.cs">
       <DependentUpon>EditCalendarWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Calendar Controls\Legend.xaml.cs">
+      <DependentUpon>Legend.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Calendar Controls\Month.xaml.cs">
       <DependentUpon>Month.xaml</DependentUpon>
     </Compile>
@@ -70,8 +73,8 @@
     <Compile Include="Calendar Controls\Date.xaml.cs">
       <DependentUpon>Date.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Calendar Controls\RosterEditWindow.xaml.cs">
-      <DependentUpon>RosterEditWindow.xaml</DependentUpon>
+    <Compile Include="Roster Controls\RosterAddWindow.xaml.cs">
+      <DependentUpon>RosterAddWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="LogInWindow.xaml.cs">
       <DependentUpon>LogInWindow.xaml</DependentUpon>
@@ -79,8 +82,14 @@
     <Compile Include="Roster Controls\Roster.xaml.cs">
       <DependentUpon>Roster.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Roster Controls\RosterRemoveWindow.xaml.cs">
+      <DependentUpon>RosterRemoveWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Stats Controls\Stats.xaml.cs">
       <DependentUpon>Stats.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Stats Controls\StatsEditWindow.xaml.cs">
+      <DependentUpon>StatsEditWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Tab.xaml.cs">
       <DependentUpon>Tab.xaml</DependentUpon>
@@ -89,6 +98,10 @@
       <DependentUpon>WeekDay.xaml</DependentUpon>
     </Compile>
     <Page Include="Calendar Controls\EditCalendarWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Calendar Controls\Legend.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -108,7 +121,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Calendar Controls\RosterEditWindow.xaml">
+    <Page Include="Roster Controls\RosterAddWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -132,7 +145,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Roster Controls\RosterRemoveWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Stats Controls\Stats.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stats Controls\StatsEditWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

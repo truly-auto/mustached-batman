@@ -11,27 +11,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using _481Project.Calendar_Controls;
 
-namespace _481Project
+namespace _481Project.Calendar_Controls
 {
     /// <summary>
-    /// Interaction logic for Date.xaml
+    /// Interaction logic for Legend.xaml
     /// </summary>
-    public partial class Date : UserControl
+    public partial class Legend : UserControl
     {
-        public Date()
+        public Legend()
         {
             InitializeComponent();
         }
-
-        private void border1_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            //Use this to open up our modal window.
-            var EditWindow = new EditCalendarWindow();
-            EditWindow.ShowDialog();
- 
-        }
-
     }
 }
