@@ -5,9 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="635" d:DesignWidth="930" xmlns:my="clr-namespace:_481Project">
-<DockPanel Height="635" Name="dockPanel1" Width="930">
-        <my:Roster x:Name="roster1" />
-        <my:Calendar x:Name="calendar1" Width="430" />
-        <my:Stats Height="635" x:Name="stats1" Width="250" />
-    </DockPanel>
+    <Grid Height="635" Name="grid1" Width="930">
+        <my:Roster HorizontalAlignment="Left" x:Name="roster1" VerticalAlignment="Top" />
+        <my:Calendar HorizontalAlignment="Left" Margin="256,0,0,0" x:Name="calendar1" VerticalAlignment="Top" />
+        <my:Stats Height="635" HorizontalAlignment="Left" Margin="681,-2,0,0" x:Name="stats1" VerticalAlignment="Top" Width="249" />
+    </Grid>
 </UserControl>
