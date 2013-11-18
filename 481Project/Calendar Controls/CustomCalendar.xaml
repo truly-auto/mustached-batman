@@ -4,8 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="550" d:DesignWidth="700" xmlns:my="clr-namespace:_481Project">
-    <WrapPanel Height="550" Name="wrapPanel1" Width="700" Visibility="Visible" HorizontalAlignment="Left" VerticalAlignment="Top">
+             d:DesignHeight="330" d:DesignWidth="420" xmlns:my="clr-namespace:_481Project">
+    <WrapPanel Height="330" Name="wrapPanel1" Width="420" Visibility="Visible" HorizontalAlignment="Left" VerticalAlignment="Top">
         <my:WeekDay x:Name="weekDay1" />
         <my:WeekDay x:Name="weekDay2" />
         <my:WeekDay x:Name="weekDay3" />

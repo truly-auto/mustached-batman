@@ -4,10 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="75" d:DesignWidth="700">
-    <Grid Height="75" Width="700" >
-        <Button Content="Previous Month" Height="25" HorizontalAlignment="Left" Margin="12,25,0,0" Name="button1" VerticalAlignment="Top" Width="100" Click="button1_Click" />
-        <Button Content="Next Month" Height="25" HorizontalAlignment="Right" Margin="0,25,12,0" Name="button2" VerticalAlignment="Top" Width="100" Click="button2_Click" />
-        <Label Content="November" Height="48" HorizontalAlignment="Left" Margin="192,12,0,0" Name="label1" VerticalAlignment="Top" Width="339" FontWeight="Bold" FontSize="24" HorizontalContentAlignment="Center" />
+             d:DesignHeight="55" d:DesignWidth="420">
+    <Grid Height="55" Width="420" >
+        <Button Content="Previous Month" Height="25" HorizontalAlignment="Left" Margin="12,18,0,0" Name="button1" VerticalAlignment="Top" Width="100" Click="button1_Click" />
+        <Button Content="Next Month" Height="25" HorizontalAlignment="Right" Margin="0,18,12,0" Name="button2" VerticalAlignment="Top" Width="100" Click="button2_Click" />
+        <Label Content="November" Height="48" HorizontalAlignment="Left" Margin="118,5,0,0" Name="label1" VerticalAlignment="Top" Width="184" FontWeight="Bold" FontSize="24" HorizontalContentAlignment="Center" />
     </Grid>
 </UserControl>

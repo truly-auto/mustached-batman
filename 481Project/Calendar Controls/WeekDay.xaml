@@ -4,9 +4,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="50" d:DesignWidth="100" FontSize="13" Background="#00000000">
+             d:DesignHeight="30" d:DesignWidth="60" FontSize="13" Background="#00000000">
     <Grid>
-        <Label Height="30" HorizontalAlignment="Left" Margin="12,8,0,0" Name="Day" VerticalAlignment="Top" Width="78" FontSize="12" HorizontalContentAlignment="Center" DataContext="{Binding}" Content="Weekday" />
-        <Border BorderBrush="SlateGray" BorderThickness="1" Height="50" HorizontalAlignment="Left" Name="border1" VerticalAlignment="Top" Width="100" />
+        <Label Height="30" HorizontalAlignment="Left" Name="Day" VerticalAlignment="Top" Width="60" FontSize="12" HorizontalContentAlignment="Center" DataContext="{Binding}" Content="Weekday" />
+        <Border BorderBrush="SlateGray" BorderThickness="1" Height="30" HorizontalAlignment="Left" Name="border1" VerticalAlignment="Top" Width="60" />
     </Grid>
 </UserControl>

@@ -4,10 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="100" d:DesignWidth="100" MouseDown="border1_MouseDown">
+             d:DesignHeight="60" d:DesignWidth="60" MouseDown="border1_MouseDown">
     <Grid>
-        <TextBlock Height="29" HorizontalAlignment="Left" Margin="12,8,0,0" Name="Day" Text="" VerticalAlignment="Top" Width="66" />
-        <TextBlock Height="45" HorizontalAlignment="Left" Margin="12,43,0,0" Name="Info" Text="" VerticalAlignment="Top" Width="76" />
-        <Border BorderBrush="Silver" BorderThickness="1" Height="100" HorizontalAlignment="Left" Name="border1" VerticalAlignment="Top" Width="100" MouseDown="border1_MouseDown" Visibility="Visible" Opacity="1" Background="#00000000" />
+        <TextBlock Height="30" HorizontalAlignment="Left" Name="Day" Text="" VerticalAlignment="Top" Width="60" />
+        <TextBlock Height="32" HorizontalAlignment="Left" Margin="0,28,0,0" Name="Info" Text="" VerticalAlignment="Top" Width="60" />
+        <Border BorderBrush="Silver" BorderThickness="1" Height="60" HorizontalAlignment="Left" Name="border1" VerticalAlignment="Top" Width="60" MouseDown="border1_MouseDown" Visibility="Visible" Opacity="1" Background="#00000000" />
     </Grid>
 </UserControl>

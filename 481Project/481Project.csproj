@@ -70,10 +70,10 @@
     <Compile Include="LogInWindow.xaml.cs">
       <DependentUpon>LogInWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Roster.xaml.cs">
+    <Compile Include="Roster Controls\Roster.xaml.cs">
       <DependentUpon>Roster.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Stats.xaml.cs">
+    <Compile Include="Stats Controls\Stats.xaml.cs">
       <DependentUpon>Stats.xaml</DependentUpon>
     </Compile>
     <Compile Include="Tab.xaml.cs">
@@ -114,11 +114,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Roster.xaml">
+    <Page Include="Roster Controls\Roster.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Stats.xaml">
+    <Page Include="Stats Controls\Stats.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
