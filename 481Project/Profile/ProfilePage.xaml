@@ -1,0 +1,18 @@
+﻿<Window x:Class="_481Project.Profile.ProfilePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ProfilePage" Height="466" Width="711">
+    <Grid Width="644">
+        <Image Height="185" HorizontalAlignment="Left" Margin="26,21,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="187" Source="/481Project;component/Images/profilepic.png" />
+        <Label Content="Player Name" Height="67" HorizontalAlignment="Left" Margin="232,21,0,0" Name="label1" VerticalAlignment="Top" Width="258" FontSize="40" />
+        <TextBox Height="161" HorizontalAlignment="Left" Margin="26,254,0,0" Name="textBox1" VerticalAlignment="Top" Width="187" Background="#FFC0DE47" />
+        <Label Content="Teams" Height="46" HorizontalAlignment="Left" Margin="26,207,0,0" Name="label2" VerticalAlignment="Top" Width="168" FontSize="24" />
+        <TextBox Background="#FFDDEB36" Height="161" HorizontalAlignment="Left" Margin="434,254,0,0" Name="textBox2" VerticalAlignment="Top" Width="198" />
+        <Label Content="Upcoming Events" FontSize="24" Height="46" HorizontalAlignment="Left" Margin="434,207,0,0" Name="label3" VerticalAlignment="Top" Width="198" />
+        <TextBlock Height="30" HorizontalAlignment="Left" Margin="239,82,0,0" Name="textBlock1" Text="email@address.com" VerticalAlignment="Top" Width="291" />
+        <TextBlock Height="30" HorizontalAlignment="Left" Margin="356,82,0,0" Name="textBlock2" Text="phone number" VerticalAlignment="Top" Width="291" />
+        <TextBlock Height="30" HorizontalAlignment="Left" Margin="239,171,0,0" Name="textBlock3" Text="Player made Status Update" VerticalAlignment="Top" Width="376" FontSize="16" Background="#FFD04BF5" />
+        <TextBox Background="#FF93ADD4" Height="161" HorizontalAlignment="Left" Margin="219,254,0,0" Name="textBox3" VerticalAlignment="Top" Width="209" />
+        <Label Content="Game Stats" FontSize="24" Height="46" HorizontalAlignment="Left" Margin="219,207,0,0" Name="label4" VerticalAlignment="Top" Width="198" />
+    </Grid>
+</Window>
