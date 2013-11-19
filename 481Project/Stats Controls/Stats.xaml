@@ -11,9 +11,9 @@
         <ScrollViewer Height="558" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="222" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
             <StackPanel Height="558" Name="stackPanel" Width="Auto" Background="#FFA6C2EB"></StackPanel>
         </ScrollViewer>
-        <Button Background="#FF65E265" Content="+" Height="23" HorizontalAlignment="Left" Margin="174,33,0,0" Name="button1" VerticalAlignment="Top" Width="27" Click="add_Click" />
-        <Button Background="#FFCB1A1A" Content="-" Height="23" HorizontalAlignment="Left" Margin="207,33,0,0" Name="button2" VerticalAlignment="Top" Width="27" Click="remove_Click" />
-        <Button Content="Share" Height="23" HorizontalAlignment="Left" Margin="122,33,0,0" Name="button3" VerticalAlignment="Top" Width="46" IsEnabled="False" Background="#FF0071A3" />
+        <Button Background="#FF65E265" Content="+" Height="23" HorizontalAlignment="Left" Margin="174,33,0,0" Name="button1" VerticalAlignment="Top" Width="27" Click="add_Click" ToolTip="Opens a Window to Add a Game and it's Stats" />
+        <Button Background="#FFCB1A1A" Content="-" Height="23" HorizontalAlignment="Left" Margin="207,33,0,0" Name="button2" VerticalAlignment="Top" Width="27" Click="remove_Click" ToolTip="Opens a Window to Remove a Game and it's Stats" />
+        <Button Content="Share" Height="23" HorizontalAlignment="Left" Margin="122,33,0,0" Name="button3" VerticalAlignment="Top" Width="46" IsEnabled="False" Background="#FF0071A3" ToolTip="Shares selected Stat to all Connected Accounts" />
         <TextBlock Height="23" HorizontalAlignment="Left" Margin="-78,83,0,0" Name="textBlock1" Text="TextBlock" VerticalAlignment="Top" />
     </Grid>
 </UserControl>
