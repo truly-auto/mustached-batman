@@ -97,6 +97,11 @@ namespace _481Project
         private void button3_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void tab1_Loaded(object sender, RoutedEventArgs e)
+        {
+
         } 
     }
 }

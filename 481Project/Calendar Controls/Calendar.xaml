@@ -3,9 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" d:DesignHeight="385" d:DesignWidth="420" xmlns:my="clr-namespace:_481Project.Calendar_Controls" xmlns:my1="clr-namespace:_481Project">
-    <WrapPanel Height="385" Name="wrapPanel1" Width="420">
-        <my:Month x:Name="month1" />
-        <my1:CustomCalendar x:Name="customCalendar1" />
-    </WrapPanel>
+             mc:Ignorable="d" d:DesignHeight="614" d:DesignWidth="696" xmlns:my="clr-namespace:_481Project.Calendar_Controls" xmlns:my1="clr-namespace:_481Project" >
+    <Grid Height="Auto" Name="grid1" Width="Auto">
+        <WrapPanel Height="385" Margin="198,77,0,152" Name="wrapPanel1" Width="420">
+            <my:Month x:Name="month1" />
+            <my1:CustomCalendar x:Name="customCalendar1" />
+        </WrapPanel>
+        <my:Legend HorizontalAlignment="Left" Margin="0,132,0,0" x:Name="legend1" VerticalAlignment="Top" Height="330" Width="231" />
+        <Label Content="Legend" Height="50" HorizontalAlignment="Stretch" Margin="0,82,465,0" Name="label1" VerticalAlignment="Top" FontSize="24" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+    </Grid>
 </UserControl>
