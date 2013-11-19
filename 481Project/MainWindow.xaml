@@ -39,22 +39,28 @@
             </TabItem>
         </TabControl>
         <Canvas Height="39" HorizontalAlignment="Left" Margin="17,0,0,0" Name="canvas1" VerticalAlignment="Top" Width="973">
-            <TextBlock Canvas.Left="6" Canvas.Top="7" Height="26" Name="textBlock1" Text="Welcome User" Width="128" FontWeight="Bold" FontSize="18" />
-            <Expander Canvas.Left="175" Canvas.Top="11" Header="Messages" Height="169" Name="messagesExpander" Width="Auto" Expanded="expander1_Expanded" IsExpanded="False" Opacity="1">
-                <StackPanel Height="150" Name="stackPanel1" Width="Auto" Background="#FF96EF8D" Opacity="1">
+            <Expander Canvas.Left="175" Canvas.Top="11" Header="Messages" Height="Auto" Name="messagesExpander" Width="Auto" Expanded="expander1_Expanded" IsExpanded="False" Opacity="1">
+                <StackPanel Height="Auto" Name="stackPanel1" Width="Auto" Background="#FF96EF8D" Opacity="1">
                     <TextBlock Height="23" Name="textBlock4" Text="Msg One" />
                     <TextBlock Height="23" Name="textBlock5" Text="Msg Two" />
                     <TextBlock Height="23" Name="textBlock6" Text="Msg Three" />
                 </StackPanel>
             </Expander>
             <Expander Canvas.Left="270" Canvas.Top="11" Header="Notifications" Height="Auto" Name="NotificationsExpander" Width="Auto" Expanded="expander2_Expanded" IsExpanded="False">
-                <StackPanel Height="150" Name="stackPanel2" Width="Auto" Background="#FFF57474">
+                <StackPanel Height="Auto" Name="stackPanel2" Width="Auto" Background="#FFF57474">
                     <TextBlock Height="23" Name="textBlock7" Text="Notification One" />
                     <TextBlock Height="23" Name="textBlock8" Text="Notification Two" />
                     <TextBlock Height="23" Name="textBlock9" Text="Notification Three" />
                 </StackPanel>
             </Expander>
             <Button Content="Logout" Height="23" Name="logoutButton" Width="126" Click="logoutButton_Click" Canvas.Left="841" Canvas.Top="6" />
+            <Expander Header="Welcome User" Height="Auto" IsExpanded="False" Name="userExpander" Opacity="1" Width="Auto" Canvas.Left="6" Canvas.Top="6" FontSize="20">
+                <StackPanel Background="#FF96EF8D" Height="Auto" Name="stackPanel3" Opacity="1" Width="Auto">
+                    <Button Content="See Profile" Height="30" Name="button2" Width="Auto" Click="button2_Click" Background="#FF81EFCE" FontSize="12" />
+                    <Button Content="Change Password" Height="30" Name="button3" Width="Auto" Background="#FF81EFCE" FontSize="12" Click="button3_Click" />
+                    <Button Content="Change Info" Height="30" Name="button6" Width="Auto" Background="#FF81EFCE" FontSize="12" FontFamily="Segoe UI" />
+                </StackPanel>
+            </Expander>
         </Canvas>
     </Grid>
 </Window>

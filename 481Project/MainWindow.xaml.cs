@@ -86,6 +86,17 @@ namespace _481Project
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
+        }
+
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+
         } 
     }
 }
