@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" d:DesignHeight="635" d:DesignWidth="250">
-    <Grid Height="635" Width="250">
+             mc:Ignorable="d" d:DesignHeight="540" d:DesignWidth="250">
+    <Grid Height="Auto" Width="Auto">
         <Label Content="Roster" Height="57" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" Width="108" FontSize="32" FontWeight="Bold" />
-        <ScrollViewer Height="558" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="226" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
-            <StackPanel Height="558" Name="stackPanel" Width="Auto" Background="#FFDBBFBF">
+        <ScrollViewer Height="450" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="Auto" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
+            <StackPanel Height="Auto" Name="stackPanel" Width="Auto" Background="#FFDBBFBF">
                 <DockPanel Height="80" Name="dockPanel1" Width="Auto" Background="#FF8D8D8D">
                     <Image Height="Auto" Name="image1" Stretch="Fill" Width="83" HorizontalAlignment="Left" Tag="Profile Pic" Source="/481Project;component/Images/profilepic.png" />
                     <StackPanel Height="Auto" Name="stackPanel1" Width="Auto">
@@ -18,7 +18,7 @@
                 </DockPanel>
             </StackPanel>
         </ScrollViewer>
-        <Button Content="+" Height="23" HorizontalAlignment="Left" Margin="178,35,0,0" Name="button1" VerticalAlignment="Top" Width="27" Background="#FF65E265" Click="button1_Click" ToolTip="Opens a Window to Invite Player to Team" />
-        <Button Background="#FFCB1A1A" Content="-" Height="23" HorizontalAlignment="Right" Margin="0,35,12,0" Name="button2" VerticalAlignment="Top" Width="27" Click="button2_Click" ToolTip="Opens a Window to Remove Player From Team" />
+        <Button Content="+" Height="23" HorizontalAlignment="Left" Margin="169,35,0,0" Name="button1" VerticalAlignment="Top" Width="27" Background="#FF65E265" Click="button1_Click" ToolTip="Opens a Window to Invite Player to Team" />
+        <Button Background="#FFCB1A1A" Content="-" Height="23" HorizontalAlignment="Left" Margin="201,35,0,0" Name="button2" VerticalAlignment="Top" Width="27" Click="button2_Click" ToolTip="Opens a Window to Remove Player From Team" />
     </Grid>
 </UserControl>

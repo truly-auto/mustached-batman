@@ -39,5 +39,10 @@ namespace _481Project
             if (c > 0) { this.stackPanel.Children.RemoveAt(c - 1); }                //Removes last added elements
 
         }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
