@@ -9,7 +9,7 @@
         <my:Roster HorizontalAlignment="Left" x:Name="roster1" VerticalAlignment="Top" />
         <my:Calendar HorizontalAlignment="Left" Margin="245,0,0,0" x:Name="calendar1" VerticalAlignment="Top" Width="749" />
         <my:Stats Height="633" HorizontalAlignment="Left" Margin="1000,2,0,0" x:Name="stats1" VerticalAlignment="Top" Width="244" Loaded="stats1_Loaded" />
-        <Button Content="Sync with Accounts" Height="32" HorizontalAlignment="Left" Margin="793,477,0,0" Name="button1" VerticalAlignment="Top" Width="137" />
-        <Button Background="#FF0071A3" Content="Share Game" Height="32" HorizontalAlignment="Left" IsEnabled="False" Margin="656,477,0,0" Name="button3" VerticalAlignment="Top" Width="119" />
+        <Button Content="Sync with Accounts" Height="32" HorizontalAlignment="Left" Margin="793,477,0,0" Name="button1" VerticalAlignment="Top" Width="137" ToolTip="Syncs Calendar with all Accounts" />
+        <Button Background="#FF0071A3" Content="Share Game" Height="32" HorizontalAlignment="Left" IsEnabled="False" Margin="656,477,0,0" Name="button3" VerticalAlignment="Top" Width="119" ToolTip="Shares specific Days with all accounts" />
     </Grid>
 </UserControl>

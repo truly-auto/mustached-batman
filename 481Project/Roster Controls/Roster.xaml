@@ -9,7 +9,7 @@
         <ScrollViewer Height="558" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="226" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
             <StackPanel Height="558" Name="stackPanel" Width="Auto" Background="#FFDBBFBF"></StackPanel>
         </ScrollViewer>
-        <Button Content="+" Height="23" HorizontalAlignment="Left" Margin="178,35,0,0" Name="button1" VerticalAlignment="Top" Width="27" Background="#FF65E265" Click="button1_Click" />
-        <Button Background="#FFCB1A1A" Content="-" Height="23" HorizontalAlignment="Left" Margin="211,35,0,0" Name="button2" VerticalAlignment="Top" Width="27" Click="button2_Click" />
+        <Button Content="+" Height="23" HorizontalAlignment="Left" Margin="178,35,0,0" Name="button1" VerticalAlignment="Top" Width="27" Background="#FF65E265" Click="button1_Click" ToolTip="Opens a Window to Invite Player to Team" />
+        <Button Background="#FFCB1A1A" Content="-" Height="23" HorizontalAlignment="Right" Margin="0,35,12,0" Name="button2" VerticalAlignment="Top" Width="27" Click="button2_Click" ToolTip="Opens a Window to Remove Player From Team" />
     </Grid>
 </UserControl>
