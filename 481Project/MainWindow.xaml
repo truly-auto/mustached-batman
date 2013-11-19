@@ -1,14 +1,18 @@
 ﻿<Window x:Class="_481Project.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="768" Width="1325" xmlns:my="clr-namespace:_481Project" Loaded="Window_Loaded"
+        Title="MainWindow" Height="772" Width="1325" xmlns:my="clr-namespace:_481Project" Loaded="Window_Loaded"
         WindowStartupLocation="CenterScreen">
-    <Grid Width="1307">
-        <TabControl Height="661" HorizontalAlignment="Left" Margin="17,56,0,0" Name="tabControl1" VerticalAlignment="Top" Width="1285">
+    <Grid Width="1307" Height="790">
+        <TabControl Height="651" HorizontalAlignment="Left" Margin="17,56,0,0" Name="tabControl1" VerticalAlignment="Top" Width="1285">
             <TabItem Header="Team 1" Name="tabItem1" Height="20" Width="100">
-                <DockPanel Height="Auto" Name="dockPanel1" Width="1275">
-                    <my:Tab x:Name="tab1" Width="1272" Loaded="tab1_Loaded" />
-                </DockPanel>
+                <Grid Background="#FFEFB859" Height="100" Name="grid2" Width="Auto" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="32*" />
+                        <ColumnDefinition Width="1253*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Team Banner" FontSize="32" Grid.Column="1" Height="71" HorizontalAlignment="Center" Margin="532,11,508,18" Name="label6" VerticalAlignment="Center" Width="213" />
+                </Grid>
             </TabItem>
             <TabItem Header="Add/Create Team">
                 <Grid Height="635" Name="grid1" Width="930">
@@ -64,5 +68,6 @@
                 </StackPanel>
             </Expander>
         </Canvas>
+        <my:Tab x:Name="tab1" Width="1272" Loaded="tab1_Loaded" Margin="22,179,13,51" />
     </Grid>
 </Window>
