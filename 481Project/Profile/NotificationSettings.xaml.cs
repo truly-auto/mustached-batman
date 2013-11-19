@@ -15,13 +15,23 @@ using System.Windows.Shapes;
 namespace _481Project.Profile
 {
     /// <summary>
-    /// Interaction logic for UserInfo.xaml
+    /// Interaction logic for NotificationSettings.xaml
     /// </summary>
-    public partial class UserInfo : UserControl
+    public partial class NotificationSettings : UserControl
     {
-        public UserInfo()
+        public NotificationSettings()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void checkBox1_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

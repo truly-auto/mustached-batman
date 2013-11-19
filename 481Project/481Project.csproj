@@ -79,6 +79,12 @@
     <Compile Include="Profile\ChangeUserInfo.xaml.cs">
       <DependentUpon>ChangeUserInfo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Profile\ConnectedAccounts.xaml.cs">
+      <DependentUpon>ConnectedAccounts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\NotificationSettings.xaml.cs">
+      <DependentUpon>NotificationSettings.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Profile\UserInfo.xaml.cs">
       <DependentUpon>UserInfo.xaml</DependentUpon>
     </Compile>
@@ -135,6 +141,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Profile\ChangeUserInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Profile\ConnectedAccounts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Profile\NotificationSettings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -216,6 +230,7 @@
     <Content Include="Images\Hockey sticks.htm" />
     <Content Include="Images\Hockey sticks1.htm" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

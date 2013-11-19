@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace _481Project.Profile
 {
     /// <summary>
-    /// Interaction logic for UserInfo.xaml
+    /// Interaction logic for ConnectedAccounts.xaml
     /// </summary>
-    public partial class UserInfo : UserControl
+    public partial class ConnectedAccounts : UserControl
     {
-        public UserInfo()
+        public ConnectedAccounts()
         {
             InitializeComponent();
         }

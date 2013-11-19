@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="_481Project.Profile.NotificationSettings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Label Content="Message Alerts" Height="25" HorizontalAlignment="Left" Margin="12,57,0,0" Name="label1" VerticalAlignment="Top" Width="162" />
+        <Label Content="Notification Alerts" Height="25" HorizontalAlignment="Left" Margin="12,123,0,0" Name="label2" VerticalAlignment="Top" Width="162" />
+        <Label Content="Checkmark to receive alerts" Height="39" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label3" VerticalAlignment="Top" Width="254" />
+        <CheckBox Content="Email" Height="16" HorizontalAlignment="Left" Margin="123,62,0,0" Name="checkBox3" VerticalAlignment="Top" />
+        <CheckBox Content="SMS" Height="16" HorizontalAlignment="Right" Margin="0,62,85,0" Name="checkBox1" VerticalAlignment="Top" />
+        <CheckBox Content="Email" Height="16" HorizontalAlignment="Left" Margin="123,128,0,0" Name="checkBox2" VerticalAlignment="Top" />
+        <CheckBox Content="SMS" Height="16" HorizontalAlignment="Right" Margin="0,128,85,0" Name="checkBox4" VerticalAlignment="Top" />
+        <Button Content="Save" Height="25" HorizontalAlignment="Left" Margin="132,263,0,0" Name="button1" VerticalAlignment="Top" Width="83" />
+        <Button Content="Close" Height="25" HorizontalAlignment="Left" Margin="221,263,0,0" Name="button2" VerticalAlignment="Top" Width="67" />
+    </Grid>
+</UserControl>
