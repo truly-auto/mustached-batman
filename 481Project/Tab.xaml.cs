@@ -23,5 +23,10 @@ namespace _481Project
         {
             InitializeComponent();
         }
+
+        private void stats1_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
