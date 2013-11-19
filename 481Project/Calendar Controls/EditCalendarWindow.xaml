@@ -1,10 +1,36 @@
 ﻿<Window x:Class="_481Project.Calendar_Controls.EditCalendarWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="EditCalendarWindow" Height="300" Width="300" WindowStyle="None"
+        Title="EditCalendarWindow" Height="408" Width="696" WindowStyle="None"
         WindowStartupLocation="CenterScreen" xmlns:my="_481Project">
     <Grid>
-        <Button Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="191,231,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="cancel_Click" />
-        <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="110,231,0,0" Name="button2" VerticalAlignment="Top" Width="75" />
+        <Button Content="Close" Height="23" HorizontalAlignment="Left" Margin="587,334,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="cancel_Click" />
+        <Label Content="Date" Height="44" HorizontalAlignment="Left" Margin="278,0,0,0" Name="label1" VerticalAlignment="Top" Width="128" FontWeight="Bold" FontSize="28" HorizontalContentAlignment="Center" />
+        <ScrollViewer CanContentScroll="True" Height="56" HorizontalAlignment="Left" Margin="29,83,0,0" Name="scrollViewer1" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Width="296">
+            <StackPanel Background="#FFAEACD4" Height="Auto" Name="stackPanel" Width="280" />
+        </ScrollViewer>
+        <Label Content="Current Events" Height="39" HorizontalAlignment="Left" Margin="106,28,0,0" Name="label2" VerticalAlignment="Top" FontSize="18" Width="138" />
+        <Label Content="Add Event" Height="31" HorizontalAlignment="Right" Margin="0,28,117,0" Name="label3" VerticalAlignment="Top" Width="100" FontSize="18" />
+        <Button Content="Edit" Height="23" HorizontalAlignment="Left" Margin="169,145,0,0" Name="button3" VerticalAlignment="Top" Width="75" />
+        <Button Content="Remove" Height="23" HorizontalAlignment="Left" Margin="250,145,0,0" Name="button4" VerticalAlignment="Top" Width="75" />
+        <GridSplitter Height="306" HorizontalAlignment="Left" Margin="336,50,0,0" Name="gridSplitter1" VerticalAlignment="Top" Width="11" />
+        <ScrollViewer CanContentScroll="True" Height="123" HorizontalAlignment="Left" Margin="29,224,0,0" Name="scrollViewer2" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Width="138">
+            <StackPanel Background="#FFACD4B2" Height="Auto" Name="stackPanel1" Width="Auto" />
+        </ScrollViewer>
+        <ScrollViewer CanContentScroll="True" Height="123" HorizontalAlignment="Left" Margin="187,224,0,0" Name="scrollViewer3" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Width="138">
+            <StackPanel Background="#FFD4ACAC" Height="Auto" Name="stackPanel2" Width="Auto" />
+        </ScrollViewer>
+        <Label Content="Available" Height="28" HorizontalAlignment="Left" Margin="29,190,0,0" Name="label5" VerticalAlignment="Top" />
+        <Label Content="Unavailable" Height="28" HorizontalAlignment="Left" Margin="187,190,0,0" Name="label4" VerticalAlignment="Top" Width="78" />
+        <RadioButton Content="Game" Height="16" HorizontalAlignment="Left" Margin="376,71,0,0" Name="radioButton1" VerticalAlignment="Top" />
+        <RadioButton Content="Practice" Height="16" HorizontalAlignment="Left" Margin="467,71,0,0" Name="radioButton2" VerticalAlignment="Top" />
+        <RadioButton Content="Other" Height="16" HorizontalAlignment="Left" Margin="558,71,0,0" Name="radioButton3" VerticalAlignment="Top" />
+        <Button Content="Add " Height="23" HorizontalAlignment="Left" Margin="506,333,0,0" Name="button2" VerticalAlignment="Top" Width="75" />
+        <ListBox Height="28" HorizontalAlignment="Left" Margin="376,140,0,0" Name="listBox1" VerticalAlignment="Top" Width="79" />
+        <Label Content="Time :" Height="28" HorizontalAlignment="Left" Margin="376,111,0,0" Name="label6" VerticalAlignment="Top" />
+        <Label Content="Location :" Height="28" HorizontalAlignment="Left" Margin="376,186,0,0" Name="label7" VerticalAlignment="Top" />
+        <Button Content="Book" Height="23" HorizontalAlignment="Right" Margin="0,267,93,0" Name="button5" VerticalAlignment="Top" Width="75" />
+        <ListBox Height="28" HorizontalAlignment="Left" Margin="376,218,0,0" Name="listBox2" VerticalAlignment="Top" Width="109" />
+        <ListBox Height="28" HorizontalAlignment="Left" Margin="376,262,0,0" Name="listBox3" VerticalAlignment="Top" Width="109" />
     </Grid>
 </Window>
