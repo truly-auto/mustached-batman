@@ -4,12 +4,21 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="635" d:DesignWidth="1246" xmlns:my="clr-namespace:_481Project">
-    <Grid Height="636" Name="grid1" Width="Auto">
-        <my:Roster HorizontalAlignment="Left" x:Name="roster1" VerticalAlignment="Top" />
-        <my:Calendar HorizontalAlignment="Left" Margin="245,0,0,0" x:Name="calendar1" VerticalAlignment="Top" Width="749" />
-        <my:Stats Height="633" HorizontalAlignment="Left" Margin="1000,2,0,0" x:Name="stats1" VerticalAlignment="Top" Width="244" Loaded="stats1_Loaded" />
-        <Button Content="Sync with Accounts" Height="32" HorizontalAlignment="Left" Margin="793,477,0,0" Name="button1" VerticalAlignment="Top" Width="137" ToolTip="Syncs Calendar with all Accounts" />
-        <Button Background="#FF0071A3" Content="Share Game" Height="32" HorizontalAlignment="Left" IsEnabled="False" Margin="656,477,0,0" Name="button3" VerticalAlignment="Top" Width="119" ToolTip="Shares specific Days with all accounts" />
+             d:DesignHeight="675" d:DesignWidth="1246" xmlns:my="clr-namespace:_481Project">
+    <Grid Height="665" Name="grid1" Width="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="388*" />
+            <ColumnDefinition Width="858*" />
+        </Grid.ColumnDefinitions>
+        <my:Roster HorizontalAlignment="Left" x:Name="roster1" VerticalAlignment="Bottom" Height="558" />
+        <my:Calendar HorizontalAlignment="Left" Margin="245,0,0,0" x:Name="calendar1" VerticalAlignment="Bottom" Width="749" Grid.ColumnSpan="2" Height="620" />
+        <my:Stats Height="558" HorizontalAlignment="Left" Margin="612,0,0,0" x:Name="stats1" VerticalAlignment="Bottom" Width="244" Loaded="stats1_Loaded" Grid.Column="1" />
+        <Grid Background="#FFEFB859" Height="100" Margin="-2,0,2,0" Name="grid2" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="32*" />
+                <ColumnDefinition Width="1253*" />
+            </Grid.ColumnDefinitions>
+            <Label Content="Team Banner" FontSize="32" Grid.Column="1" Height="71" HorizontalAlignment="Center" Margin="500,11,487,18" Name="label6" VerticalAlignment="Center" Width="223" />
+        </Grid>
     </Grid>
 </UserControl>
