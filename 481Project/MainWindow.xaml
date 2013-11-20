@@ -4,7 +4,7 @@
         Title="MainWindow" Height="772" Width="1325" xmlns:my="clr-namespace:_481Project" Loaded="Window_Loaded"
         WindowStartupLocation="CenterScreen">
     <Grid Width="1307" Height="790">
-        <TabControl Height="651" HorizontalAlignment="Left" Margin="17,56,0,0" Name="tabControl1" VerticalAlignment="Top" Width="1285">
+        <TabControl Height="681" HorizontalAlignment="Left" Margin="17,56,0,0" Name="tabControl1" VerticalAlignment="Top" Width="1285">
             <TabItem Header="Team 1" Name="tabItem1" Height="20" Width="100">
                 <Grid Background="#FFEFB859" Height="100" Name="grid2" Width="Auto" VerticalAlignment="Top">
                     <Grid.ColumnDefinitions>
@@ -12,10 +12,11 @@
                         <ColumnDefinition Width="1253*" />
                     </Grid.ColumnDefinitions>
                     <Label Content="Team Banner" FontSize="32" Grid.Column="1" Height="71" HorizontalAlignment="Center" Margin="532,11,508,18" Name="label6" VerticalAlignment="Center" Width="213" />
+                    <my:Tab x:Name="tab1" Loaded="tab1_Loaded" Margin="6,112,6,-537" Grid.ColumnSpan="2" />
                 </Grid>
             </TabItem>
             <TabItem Header="Add/Create Team">
-                <Grid Height="635" Name="grid1" Width="930">
+                <Grid Height="605" Name="grid1" Width="930">
                     <TextBlock Height="23" HorizontalAlignment="Left" Margin="63,115,0,0" Name="textBlock2" Text="Pending Teams" VerticalAlignment="Top" Width="89" FontWeight="Bold" />
                     <ScrollViewer Height="102" HorizontalAlignment="Left" Margin="63,159,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="259" Background="#FFC7FFFE" ToolTip="Tooltip">
                         <TextBlock Height="26" Name="textBlock10" Text="Invite One" Width="Auto" VerticalAlignment="Top" />
@@ -68,6 +69,5 @@
                 </StackPanel>
             </Expander>
         </Canvas>
-        <my:Tab x:Name="tab1" Width="1272" Loaded="tab1_Loaded" Margin="22,179,13,51" />
     </Grid>
 </Window>
