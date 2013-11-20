@@ -8,7 +8,7 @@
     <Grid Height="Auto" Width="249">
         <Label Content="Stats
                " FontSize="32" Height="57" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label1" VerticalAlignment="Top" Width="103" FontWeight="Bold" />
-        <ScrollViewer Height="450" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="222" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
+        <ScrollViewer Height="450" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="220" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
             <StackPanel Height="Auto" Name="stackPanel" Width="Auto" Background="#FFA6C2EB"></StackPanel>
         </ScrollViewer>
         <Button Background="#FF65E265" Content="+" Height="23" HorizontalAlignment="Left" Margin="174,33,0,0" Name="button1" VerticalAlignment="Top" Width="27" Click="add_Click" ToolTip="Opens a Window to Add a Game and it's Stats" />

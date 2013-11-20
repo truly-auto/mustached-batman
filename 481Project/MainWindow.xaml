@@ -2,10 +2,10 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="783" Width="1325" xmlns:my="clr-namespace:_481Project" Loaded="Window_Loaded"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen" xmlns:my1="clr-namespace:_481Project.Images">
     <Grid Width="1307" Height="790">
-        <TabControl Height="681" HorizontalAlignment="Left" Margin="17,56,0,0" Name="tabControl1" VerticalAlignment="Top" Width="1285">
-            <TabItem Header="Team 1" Name="tabItem1" Height="20" Width="100">
+        <TabControl Height="681" HorizontalAlignment="Left" Margin="17,56,0,0" Name="tabControl1" VerticalAlignment="Top" Width="1285" >
+            <TabItem Header="Team 1" Name="tabItem1" Height="20" Width="100" Loaded="tabItem1_Loaded">
                 <my:Tab x:Name="tab1" Width="Auto" />
             </TabItem>
             <TabItem Header="Add/Create Team">

@@ -11,7 +11,7 @@
         </WrapPanel>
         <my:Legend HorizontalAlignment="Left" Margin="0,132,0,0" x:Name="legend1" VerticalAlignment="Top" Height="330" Width="231" />
         <Label Content="Legend" Height="50" HorizontalAlignment="Stretch" Margin="0,82,465,0" Name="label1" VerticalAlignment="Top" FontSize="24" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
-        <Button Content="Sync with Accounts" Height="32" HorizontalAlignment="Left" Margin="520,477,0,0" Name="button1" ToolTip="Syncs Calendar with all Accounts" VerticalAlignment="Top" Width="137" />
-        <Button Background="#FF0071A3" Content="Share Game" Height="32" HorizontalAlignment="Left" IsEnabled="False" Margin="383,477,0,0" Name="button3" ToolTip="Shares specific Days with all accounts" VerticalAlignment="Top" Width="119" />
+        <Button Content="Sync with Accounts" Height="32" HorizontalAlignment="Stretch" Margin="520,492,40,90" Name="button1" ToolTip="Syncs Calendar with all Accounts" VerticalAlignment="Stretch" Width="137" />
+        <Button Background="#FF0071A3" Content="Share Game" Height="32" HorizontalAlignment="Stretch" IsEnabled="False" Margin="367,492,210,90" Name="button3" ToolTip="Shares specific Days with all accounts" VerticalAlignment="Stretch" Width="119" />
     </Grid>
 </UserControl>

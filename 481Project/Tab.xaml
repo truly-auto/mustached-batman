@@ -18,7 +18,7 @@
                 <ColumnDefinition Width="32*" />
                 <ColumnDefinition Width="1253*" />
             </Grid.ColumnDefinitions>
-            <Label Content="Team Banner" FontSize="32" Grid.Column="1" Height="71" HorizontalAlignment="Center" Margin="500,11,487,18" Name="label6" VerticalAlignment="Center" Width="223" />
+            <Label Content="Team Banner" FontSize="32" Grid.Column="1" Height="71" HorizontalAlignment="Center" Margin="500,11,487,18" Name="bannerTitle" VerticalAlignment="Center" Width="223" />
         </Grid>
     </Grid>
 </UserControl>

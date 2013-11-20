@@ -54,8 +54,11 @@ namespace _481Project
         private void teamCreateButton_Click(object sender, RoutedEventArgs e)
         {
             TabItem ti = new TabItem();
+            Tab t = new Tab();
             ti.Header = this.textBox1.Text;
-            ti.Content  = new Tab();
+            t.bannerTitle.Content = this.textBox1.Text;
+            ti.Content  = t;
+            
             this.tabControl1.Items.Insert(tabControl1.Items.Count - 1, ti);
             
             //After a new team is created, clear the name textbox
@@ -99,9 +102,13 @@ namespace _481Project
 
         }
 
-        private void tab1_Loaded(object sender, RoutedEventArgs e)
+        private void tabItem1_Loaded(object sender, RoutedEventArgs e)
         {
+            tab1.bannerTitle.Content = this.tabItem1.Header; // Set premade tab Banner
+            UserControl player = new Images.examplePlayer();
+            tab1.roster1.stackPanel.Children.Add(player);
 
-        } 
-    }
+        }
+
+     }
 }
