@@ -12,6 +12,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using _481Project.Profile;
+
 namespace _481Project
 {
     /// <summary>
@@ -99,7 +101,9 @@ namespace _481Project
 
         private void button3_Click(object sender, RoutedEventArgs e)
         {
-
+            //Change password
+            ChangePassword changePass = new ChangePassword();
+            changePass.ShowDialog();
         }
 
         private void tabItem1_Loaded(object sender, RoutedEventArgs e)
@@ -108,6 +112,27 @@ namespace _481Project
             UserControl player = new Images.examplePlayer();
             tab1.roster1.stackPanel.Children.Add(player);
 
+        }
+
+        private void button6_Click(object sender, RoutedEventArgs e)
+        {
+            //Change info
+            ChangeUserInfo changeUserInfo = new ChangeUserInfo();
+            changeUserInfo.ShowDialog();
+        }
+
+        private void button7_Click(object sender, RoutedEventArgs e)
+        {
+            //Connected accounts
+            ConnectedAccounts connectedAccounts = new ConnectedAccounts();
+            connectedAccounts.ShowDialog();
+        }
+
+        private void button8_Click(object sender, RoutedEventArgs e)
+        {
+            //Alert settings
+            NotificationSettings notifySettings = new NotificationSettings();
+            notifySettings.ShowDialog();
         }
 
      }

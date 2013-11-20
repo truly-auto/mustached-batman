@@ -54,11 +54,10 @@
             <Button Content="Logout" Height="23" Name="logoutButton" Width="126" Click="logoutButton_Click" Canvas.Left="1154" Canvas.Top="6" />
             <Expander Header="Welcome User" Height="Auto" IsExpanded="False" Name="userExpander" Opacity="1" Width="Auto" Canvas.Left="6" Canvas.Top="6" FontSize="20">
                 <StackPanel Background="#FF96EF8D" Height="Auto" Name="stackPanel3" Opacity="1" Width="Auto">
-                    <Button Content="See Profile" Height="30" Name="button2" Width="Auto" Click="button2_Click" Background="#FF81EFCE" FontSize="12" />
                     <Button Content="Change Password" Height="30" Name="button3" Width="Auto" Background="#FF81EFCE" FontSize="12" Click="button3_Click" />
-                    <Button Content="Change Info" Height="30" Name="button6" Width="Auto" Background="#FF81EFCE" FontSize="12" FontFamily="Segoe UI" />
-                    <Button Background="#FF81EFCE" Content="Connected Accounts" FontFamily="Segoe UI" FontSize="12" Height="30" Name="button7" Width="Auto" />
-                    <Button Background="#FF81EFCE" Content="Alert Settings" FontFamily="Segoe UI" FontSize="12" Height="30" Name="button8" Width="Auto" />
+                    <Button Content="Change Info" Height="30" Name="button6" Width="Auto" Background="#FF81EFCE" FontSize="12" FontFamily="Segoe UI" Click="button6_Click" />
+                    <Button Background="#FF81EFCE" Content="Connected Accounts" FontFamily="Segoe UI" FontSize="12" Height="30" Name="button7" Width="Auto" Click="button7_Click" />
+                    <Button Background="#FF81EFCE" Content="Alert Settings" FontFamily="Segoe UI" FontSize="12" Height="30" Name="button8" Width="Auto" Click="button8_Click" />
                 </StackPanel>
             </Expander>
         </Canvas>

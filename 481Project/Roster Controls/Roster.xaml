@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" d:DesignHeight="540" d:DesignWidth="250">
     <Grid Height="Auto" Width="Auto">
-        <Label Content="Roster" Height="57" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" Width="108" FontSize="32" FontWeight="Bold" />
+        <Label Content="Roster" Height="57" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" Width="138" FontSize="32" FontWeight="Bold" />
         <ScrollViewer Height="450" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="222" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
             <StackPanel Height="Auto" Name="stackPanel" Width="Auto" Background="#FFDBBFBF">
                 <StackPanel Height="Auto" Name="stackPanel1" Width="Auto" />
