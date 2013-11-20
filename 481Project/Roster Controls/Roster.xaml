@@ -6,16 +6,9 @@
              mc:Ignorable="d" d:DesignHeight="540" d:DesignWidth="250">
     <Grid Height="Auto" Width="Auto">
         <Label Content="Roster" Height="57" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" Width="108" FontSize="32" FontWeight="Bold" />
-        <ScrollViewer Height="450" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="Auto" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
+        <ScrollViewer Height="450" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="222" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
             <StackPanel Height="Auto" Name="stackPanel" Width="Auto" Background="#FFDBBFBF">
-                <DockPanel Height="80" Name="dockPanel1" Width="Auto" Background="#FF8D8D8D">
-                    <Image Height="Auto" Name="image1" Stretch="Fill" Width="83" HorizontalAlignment="Left" Tag="Profile Pic" Source="/481Project;component/Images/profilepic.png" />
-                    <StackPanel Height="Auto" Name="stackPanel1" Width="Auto">
-                        <Label Content="#99 Wayne Gretzky" Height="25" HorizontalContentAlignment="Center" Name="label2" VerticalContentAlignment="Center" Width="Auto" />
-                        <Label Content="email@address.com" Height="25" HorizontalContentAlignment="Center" Name="label3" VerticalContentAlignment="Center" Width="Auto" />
-                        <Label Content="phone number here" Height="25" HorizontalContentAlignment="Center" Name="label4" VerticalContentAlignment="Center" Width="Auto" />
-                    </StackPanel>
-                </DockPanel>
+                <StackPanel Height="Auto" Name="stackPanel1" Width="Auto" />
             </StackPanel>
         </ScrollViewer>
         <Button Content="+" Height="23" HorizontalAlignment="Left" Margin="169,35,0,0" Name="button1" VerticalAlignment="Top" Width="27" Background="#FF65E265" Click="button1_Click" ToolTip="Opens a Window to Invite Player to Team" />

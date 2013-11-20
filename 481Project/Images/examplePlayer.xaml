@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="_481Project.Images.examplePlayer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="80" d:DesignWidth="200">
+    <Grid Height="78">
+        <DockPanel Background="#FF8D8D8D" Height="Auto" Name="dockPanel1" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image Height="Auto" HorizontalAlignment="Left" Name="image1" Source="/481Project;component/Images/profilepic.png" Stretch="Fill" Tag="Profile Pic" Width="83" />
+            <StackPanel Height="Auto" Name="stackPanel1" Width="Auto">
+                <Label Content="#99 Wayne Gretzky" Height="25" HorizontalContentAlignment="Center" Name="label2" VerticalContentAlignment="Center" Width="Auto" />
+                <Label Content="email@address.com" Height="25" HorizontalContentAlignment="Center" Name="label3" VerticalContentAlignment="Center" Width="Auto" />
+                <Label Content="phone number here" Height="25" HorizontalContentAlignment="Center" Name="label4" VerticalContentAlignment="Center" Width="Auto" />
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</UserControl>
