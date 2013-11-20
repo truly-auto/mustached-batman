@@ -17,11 +17,16 @@ namespace _481Project.Profile
     /// <summary>
     /// Interaction logic for ConnectedAccounts.xaml
     /// </summary>
-    public partial class ConnectedAccounts : UserControl
+    public partial class ConnectedAccounts : Window
     {
         public ConnectedAccounts()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

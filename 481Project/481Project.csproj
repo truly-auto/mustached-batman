@@ -91,9 +91,6 @@
     <Compile Include="Profile\ProfilePage.xaml.cs">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Profile\UserInfo.xaml.cs">
-      <DependentUpon>UserInfo.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Roster Controls\RosterAddWindow.xaml.cs">
       <DependentUpon>RosterAddWindow.xaml</DependentUpon>
     </Compile>
@@ -163,10 +160,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Profile\ProfilePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Profile\UserInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

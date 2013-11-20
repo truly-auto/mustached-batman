@@ -17,11 +17,16 @@ namespace _481Project.Profile
     /// <summary>
     /// Interaction logic for ChangePassword.xaml
     /// </summary>
-    public partial class ChangePassword : UserControl
+    public partial class ChangePassword : Window
     {
         public ChangePassword()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

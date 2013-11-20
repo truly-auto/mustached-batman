@@ -17,7 +17,7 @@ namespace _481Project.Profile
     /// <summary>
     /// Interaction logic for NotificationSettings.xaml
     /// </summary>
-    public partial class NotificationSettings : UserControl
+    public partial class NotificationSettings : Window
     {
         public NotificationSettings()
         {
@@ -32,6 +32,11 @@ namespace _481Project.Profile
         private void checkBox1_Checked(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

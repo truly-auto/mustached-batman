@@ -17,11 +17,16 @@ namespace _481Project.Profile
     /// <summary>
     /// Interaction logic for ChangeUserInfo.xaml
     /// </summary>
-    public partial class ChangeUserInfo : UserControl
+    public partial class ChangeUserInfo : Window
     {
         public ChangeUserInfo()
         {
             InitializeComponent();
+        }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

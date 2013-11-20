@@ -11,7 +11,7 @@
         </ScrollViewer>
         <Label Content="Current Events" Height="39" HorizontalAlignment="Left" Margin="106,28,0,0" Name="label2" VerticalAlignment="Top" FontSize="18" Width="138" />
         <Label Content="Add Event" Height="31" HorizontalAlignment="Right" Margin="0,28,117,0" Name="label3" VerticalAlignment="Top" Width="100" FontSize="18" />
-        <Button Content="Edit" Height="23" HorizontalAlignment="Left" Margin="169,145,0,0" Name="button3" VerticalAlignment="Top" Width="75" />
+        <Button Content="Edit" Height="23" HorizontalAlignment="Left" Margin="170,145,0,0" Name="button3" VerticalAlignment="Top" Width="74" />
         <Button Content="Remove" Height="23" HorizontalAlignment="Left" Margin="250,145,0,0" Name="button4" VerticalAlignment="Top" Width="75" />
         <GridSplitter Height="306" HorizontalAlignment="Left" Margin="336,50,0,0" Name="gridSplitter1" VerticalAlignment="Top" Width="11" />
         <ScrollViewer CanContentScroll="True" Height="123" HorizontalAlignment="Left" Margin="29,224,0,0" Name="scrollViewer2" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Width="138">
@@ -29,8 +29,9 @@
         <ListBox Height="28" HorizontalAlignment="Left" Margin="376,140,0,0" Name="listBox1" VerticalAlignment="Top" Width="79" />
         <Label Content="Time :" Height="28" HorizontalAlignment="Left" Margin="376,111,0,0" Name="label6" VerticalAlignment="Top" />
         <Label Content="Location :" Height="28" HorizontalAlignment="Left" Margin="376,186,0,0" Name="label7" VerticalAlignment="Top" />
-        <Button Content="Book" Height="23" HorizontalAlignment="Right" Margin="0,267,93,0" Name="button5" VerticalAlignment="Top" Width="75" />
+        <Button Content="Book" Height="23" HorizontalAlignment="Right" Margin="0,218,93,0" Name="button5" VerticalAlignment="Top" Width="75" />
         <ListBox Height="28" HorizontalAlignment="Left" Margin="376,218,0,0" Name="listBox2" VerticalAlignment="Top" Width="109" />
-        <ListBox Height="28" HorizontalAlignment="Left" Margin="376,262,0,0" Name="listBox3" VerticalAlignment="Top" Width="109" />
+        <ListBox Height="28" HorizontalAlignment="Left" Margin="376,252,0,0" Name="listBox3" VerticalAlignment="Top" Width="109" />
+        <Button Background="#FF0071A3" Content="Share Event" Height="23" HorizontalAlignment="Left" IsEnabled="False" Margin="29,145,0,0" Name="ShareButton" VerticalAlignment="Top" Width="89" ToolTip="Shares specific Events with all accounts" />
     </Grid>
 </Window>
