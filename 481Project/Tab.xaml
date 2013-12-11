@@ -13,12 +13,15 @@
         <my:Roster HorizontalAlignment="Left" x:Name="roster1" VerticalAlignment="Bottom" Height="558" />
         <my:Calendar HorizontalAlignment="Left" Margin="245,0,0,0" x:Name="calendar1" VerticalAlignment="Bottom" Width="749" Grid.ColumnSpan="2" Height="620" />
         <my:Stats Height="558" HorizontalAlignment="Left" Margin="612,0,0,0" x:Name="stats1" VerticalAlignment="Bottom" Width="244" Loaded="stats1_Loaded" Grid.Column="1" />
-        <Grid Background="#FFEFB859" Height="100" Margin="-2,0,2,0" Name="grid2" VerticalAlignment="Top" Grid.ColumnSpan="2">
+        <Grid Background="#FFEFB859" Height="100" Margin="-2,0,2,0" Name="grid2" VerticalAlignment="Top" Grid.ColumnSpan="2" MouseEnter="grid2_MouseEnter" MouseLeave="grid2_MouseLeave">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="32*" />
                 <ColumnDefinition Width="1253*" />
             </Grid.ColumnDefinitions>
             <Label Content="Team Banner" FontSize="32" Height="100" HorizontalAlignment="Center" Margin="6,0" Name="bannerTitle" VerticalAlignment="Center" Width="Auto" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <Button Content="Team Information" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="1107,6,0,0" Name="teamInformation" VerticalAlignment="Top" Width="102" Visibility="Hidden" />
+            <Image Grid.Column="1" Height="84" HorizontalAlignment="Left" Margin="0,6,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="110" Source="/481Project;component/Images/1242115138_405.jpg" />
+            <Label Content="Team Slogan! Go team go!!" Grid.Column="1" Height="40" HorizontalAlignment="Left" Margin="815,38,0,0" Name="label1" VerticalAlignment="Top" Width="259" FontSize="20" />
         </Grid>
     </Grid>
 </UserControl>

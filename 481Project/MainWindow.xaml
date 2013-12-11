@@ -60,6 +60,7 @@
                     <Button Background="#FF81EFCE" Content="Alert Settings" FontFamily="Segoe UI" FontSize="12" Height="30" Name="button8" Width="Auto" Click="button8_Click" />
                 </StackPanel>
             </Expander>
+            <Button Canvas.Left="1073" Canvas.Top="6" Content="Help" Height="23" Name="button2" Width="75" />
         </Canvas>
     </Grid>
 </Window>
