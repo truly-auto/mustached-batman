@@ -6,8 +6,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="60" d:DesignWidth="60">
     <Grid>
-        <TextBlock Height="30" HorizontalAlignment="Left" Name="Day" Text="" VerticalAlignment="Top" Width="60" />
-        <TextBlock Height="32" HorizontalAlignment="Left" Margin="0,28,0,0" Name="Info" Text="" VerticalAlignment="Top" Width="60" />
-        <Border BorderBrush="Silver" BorderThickness="1" Height="60" HorizontalAlignment="Left" Name="border1" VerticalAlignment="Top" Width="60" MouseDown="border1_MouseDown" Visibility="Visible" Opacity="1" Background="#00000000" />
+        <TextBox Height="30" HorizontalAlignment="Left" Name="Day" Text="" VerticalAlignment="Top" Width="30" />
+        <TextBox Height="32" HorizontalAlignment="Left" Margin="0,28,0,0" Name="Info" Text="" VerticalAlignment="Top" Width="60" />
+        <Border BorderBrush="Silver" BorderThickness="1" Height="60" HorizontalAlignment="Left" Name="border1" VerticalAlignment="Top" Width="60" MouseDown="border1_MouseDown" Visibility="Visible" Opacity="10" Background="#00000000" MouseEnter="border1_MouseEnter" MouseLeave="border1_MouseLeave" />
     </Grid>
 </UserControl>
