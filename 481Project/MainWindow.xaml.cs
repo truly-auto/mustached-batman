@@ -103,6 +103,9 @@ namespace _481Project
         {
             //Change password
             ChangePassword changePass = new ChangePassword();
+            var p = new Point();
+            changePass.Top = this.PointToScreen(p).Y;
+            changePass.Left = this.PointToScreen(p).X;
             changePass.ShowDialog();
         }
 
@@ -118,6 +121,9 @@ namespace _481Project
         {
             //Change info
             ChangeUserInfo changeUserInfo = new ChangeUserInfo();
+            var p = new Point();
+            changeUserInfo.Top = this.PointToScreen(p).Y;
+            changeUserInfo.Left = this.PointToScreen(p).X;
             changeUserInfo.ShowDialog();
         }
 
@@ -125,6 +131,9 @@ namespace _481Project
         {
             //Connected accounts
             ConnectedAccounts connectedAccounts = new ConnectedAccounts();
+            var p = new Point();
+            connectedAccounts.Top = this.PointToScreen(p).Y;
+            connectedAccounts.Left = this.PointToScreen(p).X;
             connectedAccounts.ShowDialog();
         }
 
@@ -132,6 +141,9 @@ namespace _481Project
         {
             //Alert settings
             NotificationSettings notifySettings = new NotificationSettings();
+            var p = new Point();
+            notifySettings.Top = this.PointToScreen(p).Y;
+            notifySettings.Left = this.PointToScreen(p).X;
             notifySettings.ShowDialog();
         }
 
