@@ -5,14 +5,11 @@
         WindowStartupLocation="CenterScreen" xmlns:my="_481Project">
     <Grid>
         <Button Content="Close" Height="23" HorizontalAlignment="Left" Margin="587,334,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="cancel_Click" />
-        <Label Content="Date" Height="44" HorizontalAlignment="Left" Margin="278,0,0,0" Name="label1" VerticalAlignment="Top" Width="128" FontWeight="Bold" FontSize="28" HorizontalContentAlignment="Center" />
-        <ScrollViewer CanContentScroll="True" Height="56" HorizontalAlignment="Left" Margin="29,83,0,0" Name="scrollViewer1" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Width="296">
-            <StackPanel Background="#FFAEACD4" Height="Auto" Name="stackPanel" Width="280" />
-        </ScrollViewer>
+        <Label Content="Date" Height="44" HorizontalAlignment="Left" Margin="12,0,0,0" Name="label1" VerticalAlignment="Top" Width="650" FontWeight="Bold" FontSize="28" HorizontalContentAlignment="Center" />
+        <ScrollViewer CanContentScroll="True" Height="76" HorizontalAlignment="Left" Margin="29,63,0,0" Name="scrollViewer1" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Width="296"></ScrollViewer>
         <Label Content="Current Events" Height="39" HorizontalAlignment="Left" Margin="106,28,0,0" Name="label2" VerticalAlignment="Top" FontSize="18" Width="138" />
         <Label Content="Add Event" Height="31" HorizontalAlignment="Right" Margin="0,28,117,0" Name="label3" VerticalAlignment="Top" Width="100" FontSize="18" />
-        <Button Content="Edit" Height="23" HorizontalAlignment="Left" Margin="170,145,0,0" Name="button3" VerticalAlignment="Top" Width="74" />
-        <Button Content="Remove" Height="23" HorizontalAlignment="Left" Margin="250,145,0,0" Name="button4" VerticalAlignment="Top" Width="75" />
+        <Button Content="Remove" Height="23" HorizontalAlignment="Left" Margin="250,145,0,0" Name="button4" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="button4_Click" />
         <GridSplitter Height="306" HorizontalAlignment="Left" Margin="336,50,0,0" Name="gridSplitter1" VerticalAlignment="Top" Width="11" />
         <ScrollViewer CanContentScroll="True" Height="123" HorizontalAlignment="Left" Margin="29,224,0,0" Name="scrollViewer2" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Width="138">
             <StackPanel Background="#FFACD4B2" Height="Auto" Name="stackPanel1" Width="Auto" />
@@ -22,16 +19,33 @@
         </ScrollViewer>
         <Label Content="Available" Height="28" HorizontalAlignment="Left" Margin="29,190,0,0" Name="label5" VerticalAlignment="Top" />
         <Label Content="Unavailable" Height="28" HorizontalAlignment="Left" Margin="187,190,0,0" Name="label4" VerticalAlignment="Top" Width="78" />
-        <RadioButton Content="Game" Height="16" HorizontalAlignment="Left" Margin="376,71,0,0" Name="radioButton1" VerticalAlignment="Top" />
+        <RadioButton Content="Game" Height="16" HorizontalAlignment="Left" Margin="376,71,0,0" Name="radioButton1" VerticalAlignment="Top" IsChecked="True" />
         <RadioButton Content="Practice" Height="16" HorizontalAlignment="Left" Margin="467,71,0,0" Name="radioButton2" VerticalAlignment="Top" />
         <RadioButton Content="Other" Height="16" HorizontalAlignment="Left" Margin="558,71,0,0" Name="radioButton3" VerticalAlignment="Top" />
-        <Button Content="Add " Height="23" HorizontalAlignment="Left" Margin="506,333,0,0" Name="button2" VerticalAlignment="Top" Width="75" />
-        <ListBox Height="28" HorizontalAlignment="Left" Margin="376,140,0,0" Name="listBox1" VerticalAlignment="Top" Width="79" />
-        <Label Content="Time :" Height="28" HorizontalAlignment="Left" Margin="376,111,0,0" Name="label6" VerticalAlignment="Top" />
-        <Label Content="Location :" Height="28" HorizontalAlignment="Left" Margin="376,186,0,0" Name="label7" VerticalAlignment="Top" />
-        <Button Content="Book" Height="23" HorizontalAlignment="Right" Margin="0,218,93,0" Name="button5" VerticalAlignment="Top" Width="75" />
-        <ListBox Height="28" HorizontalAlignment="Left" Margin="376,218,0,0" Name="listBox2" VerticalAlignment="Top" Width="109" />
-        <ListBox Height="28" HorizontalAlignment="Left" Margin="376,252,0,0" Name="listBox3" VerticalAlignment="Top" Width="109" />
+        <Button Content="Add " Height="23" HorizontalAlignment="Left" Margin="506,333,0,0" Name="button2" VerticalAlignment="Top" Width="75" Click="button2_Click" />
+        <Label Content="Time :" Height="28" HorizontalAlignment="Left" Margin="379,101,0,0" Name="label6" VerticalAlignment="Top" />
+        <Label Content="Description : " Height="28" HorizontalAlignment="Left" Margin="347,190,0,0" Name="label7" VerticalAlignment="Top" Width="79" />
         <Button Background="#FF0071A3" Content="Share Event" Height="23" HorizontalAlignment="Left" IsEnabled="False" Margin="29,145,0,0" Name="ShareButton" VerticalAlignment="Top" Width="89" ToolTip="Shares specific Events with all accounts" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="433,106,0,0" Name="comboBox1" VerticalAlignment="Top" Width="79" ItemsSource="{Binding}">
+            <ComboBoxItem Content="8:00 AM" />
+            <ComboBoxItem Content="9:00 AM" />
+            <ComboBoxItem Content="10:00 AM" />
+            <ComboBoxItem Content="11:00 AM" />
+            <ComboBoxItem Content="12:00 PM" />
+            <ComboBoxItem Content="1:00 PM" />
+            <ComboBoxItem Content="2:00 PM" />
+            <ComboBoxItem Content="3:00 PM" />
+            <ComboBoxItem Content="4:00 PM" />
+            <ComboBoxItem Content="5:00 PM" />
+            <ComboBoxItem Content="6:00 PM" />
+            <ComboBoxItem Content="7:00 PM" />
+            <ComboBoxItem Content="8:00 PM" />
+        </ComboBox>
+        <Label Content="Location :" Height="28" HorizontalAlignment="Left" Margin="360,146,0,0" Name="label8" VerticalAlignment="Top" />
+        <TextBox Height="24" HorizontalAlignment="Left" Margin="433,148,0,0" Name="textBox1" VerticalAlignment="Top" Width="127" />
+        <TextBox Height="73" HorizontalAlignment="Left" Margin="433,200,0,0" Name="textBox2" VerticalAlignment="Top" Width="229" />
+        <TextBlock Height="17" HorizontalAlignment="Left" Margin="433,300,0,0" Name="textBlock1" Text="" VerticalAlignment="Top" Width="229" />
+        <TextBlock Height="17" HorizontalAlignment="Left" Margin="29,174,0,0" Name="textBlock2" Text="" VerticalAlignment="Top" Width="296" />
+        <StackPanel Background="#FFAEACD4" Height="75" Name="stackPanel" Width="278" DataContext="{Binding}" Margin="30,64,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" />
     </Grid>
 </Window>

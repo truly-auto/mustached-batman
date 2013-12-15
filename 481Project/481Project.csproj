@@ -59,6 +59,10 @@
     <Compile Include="Calendar Controls\EditCalendarWindow.xaml.cs">
       <DependentUpon>EditCalendarWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Calendar Controls\Event.cs" />
+    <Compile Include="Calendar Controls\EventUC.xaml.cs">
+      <DependentUpon>EventUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Calendar Controls\Legend.xaml.cs">
       <DependentUpon>Legend.xaml</DependentUpon>
     </Compile>
@@ -117,6 +121,10 @@
       <DependentUpon>WeekDay.xaml</DependentUpon>
     </Compile>
     <Page Include="Calendar Controls\EditCalendarWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Calendar Controls\EventUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

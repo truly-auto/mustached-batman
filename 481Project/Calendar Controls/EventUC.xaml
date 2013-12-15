@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="_481Project.Calendar_Controls.EventUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="46" d:DesignWidth="232">
+    <Grid Height="43" Width="221">
+        <Rectangle Height="37" HorizontalAlignment="Left" Margin="0,3,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="219" />
+        <CheckBox Height="16" HorizontalAlignment="Left" Margin="12,12,0,0" Name="checkBox1" VerticalAlignment="Top" Checked="checkBox1_Checked" />
+        <TextBlock Height="20" HorizontalAlignment="Right" Margin="0,12,12,0" Name="textBlock1" Text="" VerticalAlignment="Top" Width="177" />
+    </Grid>
+</UserControl>
