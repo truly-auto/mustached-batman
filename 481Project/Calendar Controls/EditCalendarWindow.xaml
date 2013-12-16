@@ -8,11 +8,9 @@
             <ColumnDefinition Width="132*" />
             <ColumnDefinition Width="542*" />
         </Grid.ColumnDefinitions>
-        <Button Content="Close" Height="23" HorizontalAlignment="Left" Margin="455,334,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="cancel_Click" Grid.Column="1" />
+        <Button Content="Close" Height="23" HorizontalAlignment="Left" Margin="455,333,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="cancel_Click" Grid.Column="1" />
         <Label Content="Date" Height="44" HorizontalAlignment="Left" Margin="12,0,0,0" Name="label1" VerticalAlignment="Top" Width="650" FontWeight="Bold" FontSize="28" HorizontalContentAlignment="Center" Grid.ColumnSpan="2" />
-        <Label Content="Events for this Day" Height="39" HorizontalAlignment="Left" Margin="91,28,0,0" Name="label2" VerticalAlignment="Top" FontSize="18" Width="174" Grid.ColumnSpan="2" />
         <Label Content="Add/Edit Event" Height="31" HorizontalAlignment="Right" Margin="0,28,93,0" Name="label3" VerticalAlignment="Top" Width="138" FontSize="18" Grid.Column="1" />
-        <Button Content="Remove" Height="23" HorizontalAlignment="Left" Margin="118,145,0,0" Name="button4" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="button4_Click" Grid.Column="1" />
         <GridSplitter Height="306" HorizontalAlignment="Left" Margin="204,50,0,0" Name="gridSplitter1" VerticalAlignment="Top" Width="11" Grid.Column="1" />
         <ScrollViewer CanContentScroll="True" Height="123" HorizontalAlignment="Left" Margin="29,224,0,0" Name="scrollViewer2" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Width="138" Grid.ColumnSpan="2">
             <StackPanel Background="#FFACD4B2" Height="Auto" Name="stackPanel1" Width="Auto" />
@@ -28,8 +26,22 @@
         <Button Content="Add " Height="23" HorizontalAlignment="Left" Margin="374,333,0,0" Name="button2" VerticalAlignment="Top" Width="75" Click="button2_Click" Grid.Column="1" />
         <Label Content="Time :" Height="28" HorizontalAlignment="Left" Margin="247,101,0,0" Name="label6" VerticalAlignment="Top" Grid.Column="1" />
         <Label Content="Description : " Height="28" HorizontalAlignment="Left" Margin="215,190,0,0" Name="label7" VerticalAlignment="Top" Width="79" Grid.Column="1" />
-        <Button Background="#FF0071A3" Content="Share Event" Height="23" HorizontalAlignment="Left" IsEnabled="False" Margin="29,145,0,0" Name="ShareButton" VerticalAlignment="Top" Width="89" ToolTip="Shares specific Events with all accounts" Click="ShareButton_Click" />
-        <ComboBox Height="23" HorizontalAlignment="Left" Margin="301,106,0,0" Name="TimeComboBox" VerticalAlignment="Top" Width="79" ItemsSource="{Binding}" Grid.Column="1">
+        <Label Content="Location :" Height="28" HorizontalAlignment="Left" Margin="228,146,0,0" Name="label8" VerticalAlignment="Top" Grid.Column="1" />
+        <TextBox Height="24" HorizontalAlignment="Left" Margin="301,148,0,0" Name="locationTextBox" VerticalAlignment="Top" Width="229" Grid.Column="1" />
+        <TextBox Height="73" HorizontalAlignment="Left" Margin="301,200,0,0" Name="descTextBox" VerticalAlignment="Top" Width="229" Grid.Column="1" />
+        <TextBlock Height="17" HorizontalAlignment="Left" Margin="301,300,0,0" Name="textBlock1" Text="" VerticalAlignment="Top" Width="229" Grid.Column="1" />
+        <Grid Height="173" HorizontalAlignment="Left" Margin="14,20,0,0" Name="grid1" VerticalAlignment="Top" Width="294" Grid.ColumnSpan="2">
+            <Label Content="Events for this Day" Height="39" HorizontalAlignment="Left" Margin="60,0,0,0" Name="label2" VerticalAlignment="Top" FontSize="18" Width="174" />
+            <ListBox Height="80" HorizontalAlignment="Stretch" Margin="0,39,0,0" Name="listBox1" VerticalAlignment="Top" Width="Auto" Background="#FFADD3F5" SelectionChanged="listBox1_SelectionChanged" DataContext="{Binding}" ItemsSource="{Binding}"  />
+            <Button Content="Remove" Height="23" HorizontalAlignment="Right" Margin="0,125,6,0" Name="button4" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="button4_Click" />
+            <Button Background="#FF0071A3" Content="Share Event" Height="23" HorizontalAlignment="Left" IsEnabled="False" Margin="6,126,0,0" Name="ShareButton" VerticalAlignment="Top" Width="89" ToolTip="Shares specific Events with all accounts" Click="ShareButton_Click" />
+            <TextBlock Height="17" HorizontalAlignment="Stretch" Margin="0,156,0,0" Name="textBlock2" Text="" VerticalAlignment="Bottom" Width="Auto" />
+            <Button Content="View" Height="23" HorizontalAlignment="Right" IsEnabled="False" Margin="0,126,101,0" Name="viewButton" VerticalAlignment="Top" Width="75" Click="viewButton_Click" />
+        </Grid>
+        <Button Content="Edit" Height="23" HorizontalAlignment="Left" Margin="293,333,0,0" Name="editButton" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="editButton_Click" />
+        <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="374,333,0,0" Name="saveButton" VerticalAlignment="Top" Width="75" Grid.Column="1" HorizontalContentAlignment="Center" Click="saveButton_Click" />
+        <TextBox Height="24" HorizontalAlignment="Left" Margin="301,105,0,0" Name="TimeTextBox" VerticalAlignment="Top" Width="116" Grid.Column="1" IsReadOnly="True" />
+        <ComboBox Height="23" IsEditable="False" IsEnabled="True" IsReadOnly="False" ItemsSource="{Binding}" Margin="301,106,162,0" Name="TimeComboBox" VerticalAlignment="Top" Grid.Column="1">
             <ComboBoxItem Content="8:00 AM" />
             <ComboBoxItem Content="9:00 AM" />
             <ComboBoxItem Content="10:00 AM" />
@@ -44,11 +56,6 @@
             <ComboBoxItem Content="7:00 PM" />
             <ComboBoxItem Content="8:00 PM" />
         </ComboBox>
-        <Label Content="Location :" Height="28" HorizontalAlignment="Left" Margin="228,146,0,0" Name="label8" VerticalAlignment="Top" Grid.Column="1" />
-        <TextBox Height="24" HorizontalAlignment="Left" Margin="301,148,0,0" Name="locationTextBox" VerticalAlignment="Top" Width="229" Grid.Column="1" />
-        <TextBox Height="73" HorizontalAlignment="Left" Margin="301,200,0,0" Name="descTextBox" VerticalAlignment="Top" Width="229" Grid.Column="1" />
-        <TextBlock Height="17" HorizontalAlignment="Left" Margin="301,300,0,0" Name="textBlock1" Text="" VerticalAlignment="Top" Width="229" Grid.Column="1" />
-        <TextBlock Height="17" HorizontalAlignment="Left" Margin="29,174,0,0" Name="textBlock2" Text="" VerticalAlignment="Top" Width="296" Grid.ColumnSpan="2" />
-        <ListBox Grid.ColumnSpan="2" Height="80" HorizontalAlignment="Left" Margin="29,58,0,0" Name="listBox1" VerticalAlignment="Top" Width="296" Background="#FFADD3F5" SelectionChanged="listBox1_SelectionChanged" DataContext="{Binding}" ItemsSource="{Binding}" />
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="455,333,0,0" Name="cancelButton" Width="75" Grid.Column="1" Click="cancelButton_Click" Height="23" VerticalAlignment="Top" />
     </Grid>
 </Window>
