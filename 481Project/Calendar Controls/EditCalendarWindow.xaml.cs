@@ -84,6 +84,16 @@ namespace _481Project.Calendar_Controls
             string einfo = "";
             if (comboBox1.Text != "" && textBox1.Text != "")
             {
+                foreach (string s in owner.Events) 
+                {
+                    if (s.Contains(comboBox1.Text)) 
+                    {
+                        string error = "Event already scheduled for that time";
+                        textBlock1.Text = error;
+                        textBlock1.Foreground = Brushes.Red;
+                        return;
+                    }
+                }
                 Event E = new Event(comboBox1.Text, textBox1.Text, textBox2.Text);
                 EventUC evt = new EventUC(this);
                 if (radioButton1.IsChecked == true) 

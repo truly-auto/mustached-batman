@@ -33,21 +33,36 @@ namespace _481Project
 
         public void UpdateDayColour() 
         {
-            var bc = new BrushConverter();             
+            var bc = new BrushConverter();
+            Boolean game = false;
+            Boolean practice = false;
+            Boolean evnt = false;
             foreach (string str in Events) 
             {
-                if (str.Contains("Event"))
+                if (str.Contains("Game"))
                 {
-                    this.Background = (Brush)bc.ConvertFrom("#FF24AFD8");
+                    game = true;                    
                 }
                 else if (str.Contains("Practice")) 
                 {
-                    this.Background = (Brush)bc.ConvertFrom("#FFEBBD18");
+                    practice = true;                    
                 }
-                else if (str.Contains("Game")) 
+                else if (str.Contains("Event")) 
                 {
-                    this.Background = (Brush)bc.ConvertFrom("#FF40CC00");
+                    evnt = true;                    
                 }
+            }
+            if (game == true) 
+            {
+                this.Background = (Brush)bc.ConvertFrom("#FF40CC00");
+            }
+            else if(practice == true) 
+            {
+                this.Background = (Brush)bc.ConvertFrom("#FFEBBD18");
+            }
+            else if(evnt)
+            {
+                this.Background = (Brush)bc.ConvertFrom("#FF24AFD8");
             }
         }
 

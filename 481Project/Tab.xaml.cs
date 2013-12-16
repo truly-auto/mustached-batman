@@ -29,14 +29,5 @@ namespace _481Project
 
         }
 
-        private void grid2_MouseEnter(object sender, MouseEventArgs e)
-        {
-            teamInformation.Visibility = Visibility.Visible;
-        }
-
-        private void grid2_MouseLeave(object sender, MouseEventArgs e)
-        {
-            teamInformation.Visibility = Visibility.Hidden;
-        }
     }
 }
