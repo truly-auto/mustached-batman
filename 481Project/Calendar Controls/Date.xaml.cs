@@ -21,7 +21,7 @@ namespace _481Project
     public partial class Date : UserControl
     {
 
-        public List<string> Events = new List<string>();
+        public List<EventUC> Events = new List<EventUC>();
         public List<string> Available = new List<string>();
         public List<string> Unavailable = new List <string>();
 
@@ -37,32 +37,40 @@ namespace _481Project
             Boolean game = false;
             Boolean practice = false;
             Boolean evnt = false;
-            foreach (string str in Events) 
+            if (Events.Count == 0)
             {
-                if (str.Contains("Game"))
-                {
-                    game = true;                    
-                }
-                else if (str.Contains("Practice")) 
-                {
-                    practice = true;                    
-                }
-                else if (str.Contains("Event")) 
-                {
-                    evnt = true;                    
-                }
+                // if there are no events on this day, change to white
+                this.Background = Brushes.White;
             }
-            if (game == true) 
+            else
             {
-                this.Background = (Brush)bc.ConvertFrom("#FF40CC00");
-            }
-            else if(practice == true) 
-            {
-                this.Background = (Brush)bc.ConvertFrom("#FFEBBD18");
-            }
-            else if(evnt)
-            {
-                this.Background = (Brush)bc.ConvertFrom("#FF24AFD8");
+                foreach (EventUC e in Events)
+                {
+                    if (e.info.Event_Type.Contains("Game"))
+                    {
+                        game = true;
+                    }
+                    else if (e.info.Event_Type.Contains("Practice"))
+                    {
+                        practice = true;
+                    }
+                    else if (e.info.Event_Type.Contains("Event"))
+                    {
+                        evnt = true;
+                    }
+                }
+                if (game == true)
+                {
+                    this.Background = (Brush)bc.ConvertFrom("#FF40CC00");
+                }
+                else if (practice == true)
+                {
+                    this.Background = (Brush)bc.ConvertFrom("#FFEBBD18");
+                }
+                else if (evnt)
+                {
+                    this.Background = (Brush)bc.ConvertFrom("#FF24AFD8");
+                }
             }
         }
 

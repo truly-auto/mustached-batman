@@ -32,6 +32,8 @@ namespace _481Project
             //Simulate somethings
                 //Pending Team Invites
                 pendingTeams.Items.Add("TeamOne");
+                pendingTeams.Items.Add("TeamTwo");
+                pendingTeams.Items.Add("TeamThree");
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -181,10 +183,12 @@ namespace _481Project
             Object a = pendingTeams.SelectedItem;
 
             string s = "You removed " + a.ToString();
-            this.textBlock2.Text = s;
-            this.textBlock2.Foreground = Brushes.Red;
+            this.textBlock1.Text = s;
+            this.textBlock1.Foreground = Brushes.Red;
 
-            pendingTeams.Items.Remove(a);   
+            pendingTeams.Items.Remove(a);
+            acceptTeam.IsEnabled = false;
+            ignoreTeam.IsEnabled = false;
         }
 
      }

@@ -30,9 +30,9 @@ namespace _481Project.Calendar_Controls
                 int day = Convert.ToInt32(owner.Day.Text);
                 if (CurrentDay > day)
                 {
-                    comboBox1.IsEnabled = false;
-                    textBox1.IsEnabled = false;
-                    textBox2.IsEnabled = false;
+                    TimeComboBox.IsEnabled = false;
+                    locationTextBox.IsEnabled = false;
+                    descTextBox.IsEnabled = false;
                     button2.IsEnabled = false;
                     button4.IsEnabled = false;
                     radioButton1.IsEnabled = false;
@@ -50,12 +50,9 @@ namespace _481Project.Calendar_Controls
 
         private void PopulateSP()
         {
-            foreach (string s in owner.Events) 
+            foreach (EventUC s in owner.Events) 
             {
-                EventUC evt = new EventUC(this);
-                evt.textBlock1.Text = s;
-                evt.BorderBrush = Brushes.Black;
-                listBox1.Items.Add(evt);
+                listBox1.Items.Add(s.ToString());
             }
             foreach (string s in owner.Available)
             {
@@ -82,11 +79,11 @@ namespace _481Project.Calendar_Controls
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             string einfo = "";
-            if (comboBox1.Text != "" && textBox1.Text != "")
+            if (TimeComboBox.Text != "" && locationTextBox.Text != "")
             {
-                foreach (string s in owner.Events) 
+                foreach (EventUC s in owner.Events) 
                 {
-                    if (s.Contains(comboBox1.Text)) 
+                    if (s.info.Date.Contains(TimeComboBox.Text)) 
                     {
                         string error = "Event already scheduled for that time";
                         textBlock1.Text = error;
@@ -94,35 +91,42 @@ namespace _481Project.Calendar_Controls
                         return;
                     }
                 }
-                Event E = new Event(comboBox1.Text, textBox1.Text, textBox2.Text);
-                EventUC evt = new EventUC(this);
+
                 if (radioButton1.IsChecked == true) 
                 {                    
-                    einfo +="Game: ";
+                    einfo +="Game";
 
                 }
                 else if (radioButton2.IsChecked == true)
                 {
-                    einfo += "Practice: ";
+                    einfo += "Practice";
+
                 }
-                else {einfo += "Event: ";}
-                einfo += comboBox1.Text + " at " + textBox1.Text + ". " + textBox2.Text;
-                evt.textBlock1.Text = einfo;
+                else { einfo += "Event"; }
+
+                Event E = new Event(einfo, TimeComboBox.Text, locationTextBox.Text, descTextBox.Text);
+                EventUC evt = new EventUC(this);
+                evt.info = E;
+
+                einfo += TimeComboBox.Text + " at " + locationTextBox.Text + ". " + descTextBox.Text;
+
+                evt.textBlock1.Text = evt.ToString();
+                
                 evt.BorderBrush = Brushes.Black;
-                owner.Events.Add(einfo);
-                listBox1.Items.Add(evt);
+                owner.Events.Add(evt);
+                listBox1.Items.Add(evt.ToString());
                 ClearText();
             }
             else 
             {
                 string error = "";
-                if (comboBox1.Text == "") 
+                if (TimeComboBox.Text == "") 
                 {
                     error = "Please select a time for the event.";                  
                     textBlock1.Text = error;
                     textBlock1.Foreground = Brushes.Red;
                 }
-                if (textBox1.Text == "")
+                if (locationTextBox.Text == "")
                 {
                     error = "Please enter a location for the event.";
                     textBlock1.Text = error;
@@ -133,9 +137,9 @@ namespace _481Project.Calendar_Controls
 
         private void ClearText() 
         {
-            comboBox1.Text = "";
-            textBox2.Text = "";
-            textBox1.Text = "";
+            TimeComboBox.Text = "";
+            descTextBox.Text = "";
+            locationTextBox.Text = "";
             textBlock1.Text = "";
             textBlock2.Text = "";
         }
@@ -144,12 +148,17 @@ namespace _481Project.Calendar_Controls
         {
 
             Object a = listBox1.SelectedItem;
-
+            EventUC b = null;
+            foreach (EventUC p in owner.Events)
+            {
+                if (p.ToString() == a.ToString()) { b = p; }
+            }
+          
             string s = "You removed " + a.ToString();
             this.textBlock2.Text = s;
             this.textBlock2.Foreground = Brushes.Red;
 
-            owner.Events.Remove(a.ToString());
+            owner.Events.Remove(b);
             listBox1.Items.Remove(a);
 
             button4.IsEnabled = false;

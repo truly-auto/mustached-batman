@@ -20,6 +20,7 @@ namespace _481Project.Calendar_Controls
     public partial class EventUC : UserControl
     {
         private EditCalendarWindow edit;
+        public Event info; 
 
         public EventUC(EditCalendarWindow parent)
         {
@@ -29,7 +30,7 @@ namespace _481Project.Calendar_Controls
 
         public override string ToString()
         {
-            return textBlock1.Text;
+            return info.Event_Type+": "+info.Date +" at " + info.Location;
         }
     }
 }
