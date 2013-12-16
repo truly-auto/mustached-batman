@@ -11,15 +11,16 @@
         <Label Content="Password" Height="28" HorizontalAlignment="Left" Margin="14,185,0,0" Name="label2" VerticalAlignment="Top" />
         <Label Content="Login Page" Height="65" HorizontalAlignment="Left" Margin="85,21,0,0" Name="label3" VerticalAlignment="Top" Width="259" FontSize="36" Background="#FFF8F889" HorizontalContentAlignment="Center" />
         <Label Background="#FFF8F889" Content="Create Account" FontSize="36" Height="65" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="571,21,0,0" Name="label4" VerticalAlignment="Top" Width="259" />
-        <Button Content="Create Account" Height="23" HorizontalAlignment="Left" Margin="738,308,0,0" Name="button1" VerticalAlignment="Top" Width="92" />
-        <TextBox Background="#FFF8F889" Height="27" HorizontalAlignment="Left" Margin="571,135,0,0" Name="textBox3" VerticalAlignment="Top" Width="259" />
+        <Button Content="Create Account" Height="23" HorizontalAlignment="Left" Margin="738,308,0,0" Name="button1" VerticalAlignment="Top" Width="92" Click="button1_Click" />
+        <TextBox Background="#FFF8F889" Height="27" HorizontalAlignment="Left" Margin="571,135,0,0" Name="acEmail" VerticalAlignment="Top" Width="259" />
         <Label Content="Email Address" Height="27" HorizontalAlignment="Left" Margin="452,135,0,0" Name="label5" VerticalAlignment="Top" Width="109" />
         <Label Content="Password" Height="28" HorizontalAlignment="Left" Margin="455,0,0,512" Name="label6" VerticalAlignment="Bottom" />
         <Label Content="Confirm Password" Height="28" HorizontalAlignment="Left" Margin="455,242,0,0" Name="label7" VerticalAlignment="Top" />
         <PasswordBox Height="28" HorizontalAlignment="Left" Margin="85,185,0,0" Name="passwordBox1" VerticalAlignment="Top" Width="259" Background="#FFF8F889" />
-        <PasswordBox Background="#FFF8F889" Height="28" HorizontalAlignment="Left" Margin="571,189,0,0" Name="passwordBox2" VerticalAlignment="Top" Width="259" />
-        <PasswordBox Background="#FFF8F889" Height="28" HorizontalAlignment="Left" Margin="571,242,0,0" Name="passwordBox3" VerticalAlignment="Top" Width="259" />
+        <PasswordBox Background="#FFF8F889" Height="28" HorizontalAlignment="Left" Margin="571,189,0,0" Name="acP1" VerticalAlignment="Top" Width="259" />
+        <PasswordBox Background="#FFF8F889" Height="28" HorizontalAlignment="Left" Margin="571,242,0,0" Name="acP2" VerticalAlignment="Top" Width="259" />
         <Label Content="Enter Password" Height="28" HorizontalAlignment="Left" Margin="455,189,0,0" Name="label8" VerticalAlignment="Top" Target="{Binding}" />
         <TextBlock Height="14" HorizontalAlignment="Left" Margin="85,268,0,0" Name="textBlock1" Text="" VerticalAlignment="Top" Width="259" />
+        <Label Height="23" HorizontalAlignment="Left" Margin="465,308,0,0" Name="accountCreationFlag" VerticalAlignment="Top" Width="267" IsEnabled="True" />
     </Grid>
 </Window>

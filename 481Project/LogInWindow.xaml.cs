@@ -41,5 +41,12 @@ namespace _481Project
         {
             DialogResult = false;
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+                accountCreationFlag.Foreground = Brushes.Green;
+                accountCreationFlag.Content = "A verification email has been sent";
+
+        }
     }
 }
