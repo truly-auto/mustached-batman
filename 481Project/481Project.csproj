@@ -81,6 +81,9 @@
     <Compile Include="Images\examplePlayer.xaml.cs">
       <DependentUpon>examplePlayer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Message Control\Messages.xaml.cs">
+      <DependentUpon>Messages.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Profile\ChangePassword.xaml.cs">
       <DependentUpon>ChangePassword.xaml</DependentUpon>
     </Compile>
@@ -149,6 +152,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Images\examplePlayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Message Control\Messages.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

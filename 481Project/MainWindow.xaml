@@ -3,40 +3,41 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="783" Width="1325" xmlns:my="clr-namespace:_481Project" Loaded="Window_Loaded"
         WindowStartupLocation="CenterScreen" xmlns:my1="clr-namespace:_481Project.Images">
-    <Grid Width="1307" Height="790">
-        <TabControl Height="681" HorizontalAlignment="Left" Margin="17,56,0,0" Name="tabControl1" VerticalAlignment="Top" Width="1285" >
-            <TabItem Header="Team 1" Name="tabItem1" Height="20" Width="100" Loaded="tabItem1_Loaded">
-                <my:Tab x:Name="tab1" Width="Auto" />
-            </TabItem>
-            <TabItem Header="Add/Create Team">
-                <Grid Height="605" Name="grid1" Width="930">
-                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="63,115,0,0" Name="textBlock2" Text="Pending Teams" VerticalAlignment="Top" Width="89" FontWeight="Bold" />
-                    <ScrollViewer Height="102" HorizontalAlignment="Left" Margin="63,159,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="259" Background="#FFC7FFFE" ToolTip="Tooltip">
-                        <TextBlock Height="26" Name="textBlock10" Text="Invite One" Width="Auto" VerticalAlignment="Top" />
-                    </ScrollViewer>
-                    <GridSplitter Height="601" HorizontalAlignment="Left" Margin="465,15,0,0" Name="gridSplitter1" VerticalAlignment="Top" Width="1" Background="Black" />
-                    <TextBlock FontWeight="Bold" Height="23" HorizontalAlignment="Right" Margin="0,111,339,0" Name="textBlock3" Text="Create A Team" VerticalAlignment="Top" Width="89" />
-                    <TextBox Height="23" HorizontalAlignment="Left" Margin="585,267,0,0" Name="textBox1" VerticalAlignment="Top" Width="212" Background="#FFFCAEEE" />
-                    <Label Content="Team name :" Height="24" HorizontalAlignment="Left" Margin="585,237,0,0" Name="label1" VerticalAlignment="Top" Width="109" />
-                    <Button Content="Upload" Height="26" HorizontalAlignment="Left" Margin="806,203,0,0" Name="button1" VerticalAlignment="Top" Width="68" />
-                    <Label Content="Team Logo :" Height="28" HorizontalAlignment="Left" Margin="585,141,0,0" Name="label3" VerticalAlignment="Top" />
-                    <Image Height="53" HorizontalAlignment="Left" Margin="502,0,0,406" Name="image1" Stretch="Fill" VerticalAlignment="Bottom" Width="75" Source="/481Project;component/Images/1242115138_405.jpg" />
-                    <TextBox Height="25" HorizontalAlignment="Right" Margin="0,203,133,0" Name="textBox3" VerticalAlignment="Top" Width="214" Background="#FFFCAEEE" />
-                    <Button Content="Create" Height="24" HorizontalAlignment="Left" Margin="806,0,0,135" Name="teamCreateButton" VerticalAlignment="Bottom" Width="71" Click="teamCreateButton_Click" />
-                    <TextBlock Height="26" Margin="63,175,621,0" Name="textBlock11" Text="Invite Two" VerticalAlignment="Top" />
-                    <TextBlock Height="26" Margin="63,191,621,0" Name="textBlock12" Text="Invite Three" VerticalAlignment="Top" />
-                    <Button Content="Ignore" Height="23" HorizontalAlignment="Left" Margin="261,298,0,0" Name="button4" VerticalAlignment="Top" Width="75" />
-                    <Button Content="Accept" Height="23" HorizontalAlignment="Left" Margin="171,298,0,0" Name="button5" VerticalAlignment="Top" Width="75" />
-                    <TextBox Background="#FFFCAEEE" Height="23" HorizontalAlignment="Left" Margin="585,326,0,0" Name="textBox2" VerticalAlignment="Top" Width="212" />
-                    <Label Content="Sport or Activity :" Height="35" HorizontalAlignment="Left" Margin="585,297,0,0" Name="label2" VerticalAlignment="Top" Width="109" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" />
-                    <TextBox Background="#FFFCAEEE" Height="67" HorizontalAlignment="Left" Margin="583,390,0,0" Name="textBox4" VerticalAlignment="Top" Width="212" />
-                    <Label Content="Description :" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="583,361,0,0" Name="label4" VerticalAlignment="Top" VerticalContentAlignment="Top" Width="109" />
-                    <TextBlock Height="132" HorizontalAlignment="Left" Margin="63,391,0,0" Name="textBlock13" Text="" VerticalAlignment="Top" Width="284" Background="#FFC7FFFE"><TextBlock.ContextMenu><ContextMenu /></TextBlock.ContextMenu></TextBlock>
-                    <Label Content="Team Information :" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="63,361,0,0" Name="label5" VerticalAlignment="Top" VerticalContentAlignment="Top" Width="109" />
-                </Grid>
-            </TabItem>
-        </TabControl>
-        <Canvas Height="39" HorizontalAlignment="Left" Margin="17,0,0,0" Name="canvas1" VerticalAlignment="Top" Width="1290">
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid Width="1307" Height="790" VerticalAlignment="Top">
+            <TabControl Height="681" Name="tabControl1" Width="1285">
+                <TabItem Header="Team 1" Name="tabItem1" Height="20" Width="100" Loaded="tabItem1_Loaded">
+                    <my:Tab x:Name="tab1" Width="Auto" />
+                </TabItem>
+                <TabItem Header="Add/Create Team">
+                    <Grid Height="605" Name="grid1" Width="930">
+                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="63,115,0,0" Name="textBlock2" Text="Pending Teams" VerticalAlignment="Top" Width="89" FontWeight="Bold" />
+                        <ScrollViewer Height="102" HorizontalAlignment="Left" Margin="63,159,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="259" Background="#FFC7FFFE" ToolTip="Tooltip">
+                            <TextBlock Height="26" Name="textBlock10" Text="Invite One" Width="Auto" VerticalAlignment="Top" />
+                        </ScrollViewer>
+                        <GridSplitter Height="601" HorizontalAlignment="Left" Margin="465,15,0,0" Name="gridSplitter1" VerticalAlignment="Top" Width="1" Background="Black" />
+                        <TextBlock FontWeight="Bold" Height="23" HorizontalAlignment="Right" Margin="0,111,339,0" Name="textBlock3" Text="Create A Team" VerticalAlignment="Top" Width="89" />
+                        <TextBox Height="23" HorizontalAlignment="Left" Margin="585,267,0,0" Name="textBox1" VerticalAlignment="Top" Width="212" Background="#FFFCAEEE" />
+                        <Label Content="Team name :" Height="24" HorizontalAlignment="Left" Margin="585,237,0,0" Name="label1" VerticalAlignment="Top" Width="109" />
+                        <Button Content="Upload" Height="26" HorizontalAlignment="Left" Margin="806,203,0,0" Name="button1" VerticalAlignment="Top" Width="68" />
+                        <Label Content="Team Logo :" Height="28" HorizontalAlignment="Left" Margin="585,141,0,0" Name="label3" VerticalAlignment="Top" />
+                        <Image Height="53" HorizontalAlignment="Left" Margin="502,0,0,406" Name="image1" Stretch="Fill" VerticalAlignment="Bottom" Width="75" Source="/481Project;component/Images/1242115138_405.jpg" />
+                        <TextBox Height="25" HorizontalAlignment="Right" Margin="0,203,133,0" Name="textBox3" VerticalAlignment="Top" Width="214" Background="#FFFCAEEE" />
+                        <Button Content="Create" Height="24" HorizontalAlignment="Left" Margin="806,0,0,135" Name="teamCreateButton" VerticalAlignment="Bottom" Width="71" Click="teamCreateButton_Click" />
+                        <TextBlock Height="26" Margin="63,175,621,0" Name="textBlock11" Text="Invite Two" VerticalAlignment="Top" />
+                        <TextBlock Height="26" Margin="63,191,621,0" Name="textBlock12" Text="Invite Three" VerticalAlignment="Top" />
+                        <Button Content="Ignore" Height="23" HorizontalAlignment="Left" Margin="261,298,0,0" Name="button4" VerticalAlignment="Top" Width="75" />
+                        <Button Content="Accept" Height="23" HorizontalAlignment="Left" Margin="171,298,0,0" Name="button5" VerticalAlignment="Top" Width="75" />
+                        <TextBox Background="#FFFCAEEE" Height="23" HorizontalAlignment="Left" Margin="585,326,0,0" Name="textBox2" VerticalAlignment="Top" Width="212" />
+                        <Label Content="Sport or Activity :" Height="35" HorizontalAlignment="Left" Margin="585,297,0,0" Name="label2" VerticalAlignment="Top" Width="109" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" />
+                        <TextBox Background="#FFFCAEEE" Height="67" HorizontalAlignment="Left" Margin="583,390,0,0" Name="textBox4" VerticalAlignment="Top" Width="212" />
+                        <Label Content="Description :" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="583,361,0,0" Name="label4" VerticalAlignment="Top" VerticalContentAlignment="Top" Width="109" />
+                        <TextBlock Height="132" HorizontalAlignment="Left" Margin="63,391,0,0" Name="textBlock13" Text="" VerticalAlignment="Top" Width="284" Background="#FFC7FFFE"><TextBlock.ContextMenu><ContextMenu /></TextBlock.ContextMenu></TextBlock>
+                        <Label Content="Team Information :" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="63,361,0,0" Name="label5" VerticalAlignment="Top" VerticalContentAlignment="Top" Width="109" />
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        <Canvas Height="39" Name="canvas1" Width="1290" Margin="2,1,15,749">
             <Expander Canvas.Left="175" Canvas.Top="11" Header="Messages" Height="Auto" Name="messagesExpander" Width="Auto" Expanded="expander1_Expanded" IsExpanded="False" Opacity="1">
                 <StackPanel Height="Auto" Name="stackPanel1" Width="Auto" Background="#FF96EF8D" Opacity="1">
                     <TextBlock Height="23" Name="textBlock4" Text="Msg One" />
@@ -63,4 +64,5 @@
             <Button Canvas.Left="1073" Canvas.Top="6" Content="Help" Height="23" Name="button2" Width="75" />
         </Canvas>
     </Grid>
+    </ScrollViewer>
 </Window>

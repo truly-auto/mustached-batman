@@ -4,15 +4,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="675" d:DesignWidth="1246" xmlns:my="clr-namespace:_481Project">
-    <Grid Height="665" Name="grid1" Width="Auto">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="388*" />
-            <ColumnDefinition Width="858*" />
-        </Grid.ColumnDefinitions>
-        <my:Roster HorizontalAlignment="Left" x:Name="roster1" VerticalAlignment="Bottom" Height="558" />
-        <my:Calendar HorizontalAlignment="Left" Margin="245,0,0,0" x:Name="calendar1" VerticalAlignment="Bottom" Width="749" Grid.ColumnSpan="2" Height="620" />
-        <my:Stats Height="558" HorizontalAlignment="Left" Margin="612,0,0,0" x:Name="stats1" VerticalAlignment="Bottom" Width="244" Loaded="stats1_Loaded" Grid.Column="1" />
+             d:DesignHeight="1076" d:DesignWidth="1246" xmlns:my="clr-namespace:_481Project" xmlns:my1="clr-namespace:_481Project.Message_Control">
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+    <Grid Height="1064" Name="grid1" Width="Auto">
         <Grid Background="#FFEFB859" Height="100" Margin="-2,0,2,0" Name="grid2" VerticalAlignment="Top" Grid.ColumnSpan="2" MouseEnter="grid2_MouseEnter" MouseLeave="grid2_MouseLeave">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="32*" />
@@ -22,6 +16,11 @@
             <Button Content="Team Information" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="1107,6,0,0" Name="teamInformation" VerticalAlignment="Top" Width="102" Visibility="Hidden" />
             <Image Grid.Column="1" Height="84" HorizontalAlignment="Left" Margin="0,6,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="110" Source="/481Project;component/Images/1242115138_405.jpg" />
             <Label Content="Team Slogan! Go team go!!" Grid.Column="1" Height="40" HorizontalAlignment="Left" Margin="815,38,0,0" Name="label1" VerticalAlignment="Top" Width="259" FontSize="20" />
+            <my:Roster HorizontalAlignment="Left" x:Name="roster1" Height="558" VerticalAlignment="Bottom" Margin="2,0,0,-568" Grid.ColumnSpan="2" />
+            <my:Calendar HorizontalAlignment="Left" Margin="216,0,0,-568" x:Name="calendar1" VerticalAlignment="Bottom" Width="749" Height="620" Grid.Column="1" />
+            <my:Stats Height="558" HorizontalAlignment="Left" Margin="971,0,0,-568" x:Name="stats1" VerticalAlignment="Bottom" Width="244" Loaded="stats1_Loaded" Grid.Column="1" />
         </Grid>
+        <my1:Messages HorizontalAlignment="Left" Margin="0,674,0,0" x:Name="messages1" VerticalAlignment="Top" />
     </Grid>
+    </ScrollViewer>
 </UserControl>
