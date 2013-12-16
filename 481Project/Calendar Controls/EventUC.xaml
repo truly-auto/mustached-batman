@@ -4,9 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="46" d:DesignWidth="232">
-    <Grid Height="40" Width="Auto">
-        <CheckBox Height="16" HorizontalAlignment="Left" Margin="12,12,0,0" Name="checkBox1" VerticalAlignment="Top" Checked="checkBox1_Checked" />
-        <TextBlock Height="20" HorizontalAlignment="Left" Margin="43,12,0,0" Name="textBlock1" Text="" VerticalAlignment="Top" Width="Auto" />
+             d:DesignHeight="28" d:DesignWidth="232">
+    <Grid Height="25" Width="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="94*" />
+            <ColumnDefinition Width="138*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Height="20" HorizontalAlignment="Stretch" Name="textBlock1" Text="" VerticalAlignment="Stretch" Grid.ColumnSpan="2" />
     </Grid>
 </UserControl>

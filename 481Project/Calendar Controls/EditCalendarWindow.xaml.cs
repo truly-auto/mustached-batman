@@ -55,14 +55,14 @@ namespace _481Project.Calendar_Controls
                 EventUC evt = new EventUC(this);
                 evt.textBlock1.Text = s;
                 evt.BorderBrush = Brushes.Black;
-                stackPanel.Children.Add(evt);
+                listBox1.Items.Add(evt);
             }
             foreach (string s in owner.Available)
             {
                 EventUC evt = new EventUC(this);
                 evt.textBlock1.Text = s;
                 evt.BorderBrush = Brushes.Black;
-                stackPanel1.Children.Add(evt);
+                listBox1.Items.Add(evt);
             }
             foreach (string s in owner.Unavailable)
             {
@@ -110,7 +110,7 @@ namespace _481Project.Calendar_Controls
                 evt.textBlock1.Text = einfo;
                 evt.BorderBrush = Brushes.Black;
                 owner.Events.Add(einfo);
-                stackPanel.Children.Add(evt);
+                listBox1.Items.Add(evt);
                 ClearText();
             }
             else 
@@ -142,38 +142,38 @@ namespace _481Project.Calendar_Controls
 
         private void button4_Click(object sender, RoutedEventArgs e)
         {
-            List<EventUC> removeEvent = new List<EventUC>();
-            foreach (EventUC evnt in stackPanel.Children) 
-            {
-                if (evnt.checkBox1.IsChecked == true) 
-                {
-                    removeEvent.Add(evnt);
-                    ShareButton.IsEnabled = false;
-                }
-            }
-            foreach (EventUC evnt in removeEvent)
-            {
-                stackPanel.Children.Remove(evnt);
-                owner.Events.Remove(evnt.textBlock1.Text);
-                string s ="You removed "+evnt.textBlock1.Text;
-                this.textBlock2.Text = s;
-                this.textBlock2.Foreground = Brushes.Red;
-            }
-            var bc = new BrushConverter();
-            owner.Background = (Brush)bc.ConvertFrom("#FFFFFFFF");
+
+            Object a = listBox1.SelectedItem;
+
+            string s = "You removed " + a.ToString();
+            this.textBlock2.Text = s;
+            this.textBlock2.Foreground = Brushes.Red;
+
+            listBox1.Items.Remove(a);
+
             button4.IsEnabled = false;
+            ShareButton.IsEnabled = false;
            
         }
 
         private void ShareButton_Click(object sender, RoutedEventArgs e)
         {
-            foreach (EventUC evnt in stackPanel.Children)
-            {
-                string s = evnt.textBlock1.Text + " has been Shared!";
-                this.textBlock2.Text = s;
-                this.textBlock2.Foreground = Brushes.Green;
+            Object a = listBox1.SelectedItem;
+            string s = a.ToString() + " has been shared to Connected Accounts!";
+            this.textBlock2.Text = s;
+            this.textBlock2.Foreground = Brushes.Green;
 
+        }
+
+        private void listBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (listBox1.HasItems)
+            {
+                ShareButton.IsEnabled = true;
+                button4.IsEnabled = true;
             }
+
+
         }        
 
     }
