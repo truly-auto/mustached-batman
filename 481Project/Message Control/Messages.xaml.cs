@@ -41,11 +41,6 @@ namespace _481Project.Message_Control
 
         private void SendButton_Click(object sender, RoutedEventArgs e)
         {
-            if (EmailCheckbox.IsChecked.Value == false && SMSCheckbox.IsChecked.Value == false)
-            {
-                MessageBox.Show("You must select a message type");
-                return;
-            }
             if (ToText.Text.Length == 0)
             {
                 MessageBox.Show("You must select recipients for this message");
@@ -65,6 +60,11 @@ namespace _481Project.Message_Control
             if (EmailCheckbox.IsChecked == true)
             {
                 message += "Your email has been sent.";
+            }
+
+            if (EmailCheckbox.IsChecked.Value == false && SMSCheckbox.IsChecked.Value == false)
+            {
+                message += "Your message has been sent through the internal messaging system";
             }
 
             MessageBox.Show(message);
@@ -87,7 +87,7 @@ namespace _481Project.Message_Control
 
         private void EmailCheckbox_Click(object sender, RoutedEventArgs e)
         {
-            SubjectText.IsEnabled = !SubjectText.IsEnabled;
+            
         }
     }
 }

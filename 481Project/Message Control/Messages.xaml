@@ -9,7 +9,7 @@
         <Label Content="Messages" FontSize="32" FontWeight="Bold" Height="57" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label1" VerticalAlignment="Top" Width="167" />
         <CheckBox Content="Email" Height="16" HorizontalAlignment="Left" Margin="12,63,0,0" Name="EmailCheckbox" VerticalAlignment="Top" Click="EmailCheckbox_Click" />
         <CheckBox Content="SMS Text Message" Height="16" HorizontalAlignment="Left" Margin="80,63,0,0" Name="SMSCheckbox" VerticalAlignment="Top" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,152,0,0" Name="SubjectText" VerticalAlignment="Top" Width="120" IsEnabled="False" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,152,0,0" Name="SubjectText" VerticalAlignment="Top" Width="120" IsEnabled="True" />
         <TextBox Height="119" HorizontalAlignment="Left" Margin="12,216,0,0" Name="BodyText" VerticalAlignment="Top" Width="276" TextChanged="BodyText_TextChanged" TextWrapping="Wrap" AutoWordSelection="False" AcceptsReturn="True" />
         <Label Content="Subject" Height="28" HorizontalAlignment="Left" Margin="12,132,0,0" Name="label2" VerticalAlignment="Top" />
         <Label Content="Body" Height="28" HorizontalAlignment="Left" Margin="12,195,0,0" Name="label3" VerticalAlignment="Top" />
