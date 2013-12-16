@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 using _481Project.Profile;
+using _481Project.Help;
 
 namespace _481Project
 {
@@ -147,6 +148,12 @@ namespace _481Project
             notifySettings.Top = this.PointToScreen(p).Y;
             notifySettings.Left = this.PointToScreen(p).X;
             notifySettings.ShowDialog();
+        }
+
+        private void button2_Click_1(object sender, RoutedEventArgs e)
+        {
+            HelpWindow helpWindow = new HelpWindow();
+            helpWindow.Show();
         }
 
      }

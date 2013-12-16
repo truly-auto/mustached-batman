@@ -78,6 +78,9 @@
     <Compile Include="Calendar Controls\Date.xaml.cs">
       <DependentUpon>Date.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Help\HelpWindow.xaml.cs">
+      <DependentUpon>HelpWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Images\examplePlayer.xaml.cs">
       <DependentUpon>examplePlayer.xaml</DependentUpon>
     </Compile>
@@ -148,6 +151,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Calendar Controls\Date.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
