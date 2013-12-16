@@ -7,10 +7,10 @@
     <Grid Height="Auto" Name="grid1" Width="473">
         <WrapPanel Height="385" Margin="30,48,0,181" Name="wrapPanel1" Width="420" HorizontalAlignment="Left">
             <my:Month x:Name="month1" />
-            <my1:CustomCalendar x:Name="customCalendar1" />
+            <my1:CustomCalendar x:Name="customCalendar1" ToolTip="Click on a day to view its events." />
         </WrapPanel>
         <my:Legend HorizontalAlignment="Left" Margin="30,472,0,0" x:Name="legend1" VerticalAlignment="Top" Height="69" Width="210" />
         <Label Content="Legend" Height="36" HorizontalAlignment="Left" Margin="30,439,0,0" Name="label1" VerticalAlignment="Top" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="97" />
-        <Button Content="Sync with Accounts" Height="32" HorizontalAlignment="Stretch" Margin="338,472,23,110" Name="button1" ToolTip="Syncs Calendar with all Accounts" VerticalAlignment="Stretch" />
+        <Button Content="Sync with Accounts" Height="32" HorizontalAlignment="Stretch" Margin="338,472,23,110" Name="button1" ToolTip="Syncs Calendar with all Connected Accounts" VerticalAlignment="Stretch" />
     </Grid>
 </UserControl>
