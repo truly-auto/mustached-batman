@@ -14,6 +14,6 @@
         <CheckBox Content="Email" Height="16" HorizontalAlignment="Left" Margin="123,128,0,0" Name="checkBox2" VerticalAlignment="Top" />
         <CheckBox Content="SMS" Height="16" HorizontalAlignment="Right" Margin="0,128,55,0" Name="checkBox4" VerticalAlignment="Top" />
         <Button Content="Close" Height="23" HorizontalAlignment="Left" Margin="191,226,0,0" Name="button3" VerticalAlignment="Top" Width="75" Click="button3_Click" />
-        <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="110,226,0,0" Name="button4" VerticalAlignment="Top" Width="75" />
+        <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="110,226,0,0" Name="button4" VerticalAlignment="Top" Width="75" Click="button4_Click" />
     </Grid>
 </Window>

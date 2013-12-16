@@ -26,7 +26,7 @@ namespace _481Project.Profile
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            ((Button)sender).Content = "Saved";
         }
 
         private void facebookCheckBox_Checked(object sender, RoutedEventArgs e)
@@ -66,6 +66,11 @@ namespace _481Project.Profile
         {
             googleUsername.IsEnabled = false;
             googlePassword.IsEnabled = false;
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
 
 

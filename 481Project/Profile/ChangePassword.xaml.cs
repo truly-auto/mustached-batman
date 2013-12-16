@@ -28,5 +28,10 @@ namespace _481Project.Profile
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            ((Button)sender).Content = "Saved";
+        }
     }
 }

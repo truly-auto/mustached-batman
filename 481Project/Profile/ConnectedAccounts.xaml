@@ -30,6 +30,7 @@
                 <PasswordBox Background="#FF9BF571" Height="25" IsEnabled="False" Name="googlePassword" Width="140" />
             </DockPanel>
         </StackPanel>
-        <Button Content="Save" Height="28" Name="button2" Width="66" Click="button2_Click" Margin="419,192,15,0" VerticalAlignment="Center" HorizontalAlignment="Right" />
+        <Button Content="Save" Height="28" Name="button2" Width="66" Click="button2_Click" Margin="0,220,93,12" VerticalAlignment="Center" HorizontalAlignment="Right" />
+        <Button Content="Close" Height="28" HorizontalAlignment="Right" Margin="0,221,12,12" Name="button1" VerticalAlignment="Center" Width="66" Click="button1_Click" />
     </Grid>
 </Window>
