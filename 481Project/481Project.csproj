@@ -129,6 +129,7 @@
     <Compile Include="TeamInfo.xaml.cs">
       <DependentUpon>TeamInfo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TeamObj.cs" />
     <Page Include="Calendar Controls\EditCalendarWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

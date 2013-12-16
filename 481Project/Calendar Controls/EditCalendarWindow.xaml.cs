@@ -169,7 +169,7 @@ namespace _481Project.Calendar_Controls
         private void ShareButton_Click(object sender, RoutedEventArgs e)
         {
             Object a = listBox1.SelectedItem;
-            string s = a.ToString() + " has been shared to Connected Accounts!";
+            string s = a.ToString() + " has been Shared!";
             this.textBlock2.Text = s;
             this.textBlock2.Foreground = Brushes.Green;
 

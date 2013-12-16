@@ -22,6 +22,7 @@ namespace _481Project
     /// </summary>
     public partial class MainWindow : Window
     {
+        private List<TeamObj> pending_teams = new List<TeamObj>();
         public MainWindow()
         {
             InitializeComponent();
@@ -31,9 +32,10 @@ namespace _481Project
 
             //Simulate somethings
                 //Pending Team Invites
-                pendingTeams.Items.Add("TeamOne");
-                pendingTeams.Items.Add("TeamTwo");
-                pendingTeams.Items.Add("TeamThree");
+            pending_teams.Add(new TeamObj("The Flames", "The Best", "This is a Hockey Team"));
+            pending_teams.Add(new TeamObj("The Oilers", "The Worst", "We pretend to play Hockey"));
+            foreach (TeamObj t in pending_teams){pendingTeams.Items.Add(t.Name);}
+
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -74,6 +76,22 @@ namespace _481Project
             //After a new team is created, clear the name textbox
             this.textBox1.Text = "";
             this.textBox2.Text = "";
+            this.textBox3.Text = "";
+            this.textBox4.Text = "";
+        }
+
+
+        private void createTeam(string name, string slogan, string description)
+        {
+            TabItem ti = new TabItem();
+            Tab t = new Tab(ti);
+            ti.Header = name;
+            t.bannerTitle.Content = name;
+            t.label1.Content = slogan;
+            ti.Content = t;
+
+            this.tabControl1.Items.Insert(tabControl1.Items.Count - 1, ti);
+
         }
 
         /// <summary>
@@ -168,12 +186,44 @@ namespace _481Project
             {
                 acceptTeam.IsEnabled = true;
                 ignoreTeam.IsEnabled = true;
+                Object a = pendingTeams.SelectedItem;
+                TeamObj t = null;
+                try
+                {
+                    foreach (TeamObj o in pending_teams)
+                    {
+                        if (o.Name.Contains(a.ToString())) { t = o; }
+                    }
+                    pendingTeamDescription.Text ="Team Name: "+ t.Name + 
+                                                "\nSlogan: " + t.Slogan + 
+                                                 "\n\nDescription:\n" + t.Description;
+                }
+                catch (Exception ex) { }
             }
         }
 
         private void acceptTeam_Click(object sender, RoutedEventArgs e)
         {
             //add to tabs
+            Object a = pendingTeams.SelectedItem;
+            TeamObj t = null;
+            foreach (TeamObj o in pending_teams)
+            {
+                if (o.Name.Contains(a.ToString())) { t = o; }
+            }
+            createTeam(t.Name, t.Slogan, t.Description);
+
+
+
+
+            //remove from list
+            string s = "You joined " + a.ToString();
+            this.textBlock1.Text = s;
+            this.textBlock1.Foreground = Brushes.Green;
+
+            pendingTeams.Items.Remove(a);
+            acceptTeam.IsEnabled = false;
+            ignoreTeam.IsEnabled = false;
 
         }
 
@@ -187,6 +237,7 @@ namespace _481Project
             this.textBlock1.Foreground = Brushes.Red;
 
             pendingTeams.Items.Remove(a);
+            pendingTeamDescription.Text = "";
             acceptTeam.IsEnabled = false;
             ignoreTeam.IsEnabled = false;
         }
