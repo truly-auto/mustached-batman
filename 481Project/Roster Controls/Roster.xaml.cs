@@ -44,11 +44,6 @@ namespace _481Project
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            //var EditWindow = new RosterAddWindow();
-            //var p = new Point();
-            //EditWindow.Top = this.PointToScreen(p).Y;
-            //EditWindow.Left = this.PointToScreen(p).X;
-            //EditWindow.ShowDialog();
 
             string message = "";
             if (!String.IsNullOrEmpty(emailTextbox.Text))
@@ -64,15 +59,5 @@ namespace _481Project
             playerAddedLabel.Content = message;
             playerAddedLabel.Visibility = System.Windows.Visibility.Visible;
         }
-
-        private void button2_Click(object sender, RoutedEventArgs e)
-        {
-            var EditWindow = new RosterRemoveWindow();
-            var p = new Point();
-            EditWindow.Top = this.PointToScreen(p).Y;
-            EditWindow.Left = this.PointToScreen(p).X;
-            EditWindow.ShowDialog();
-        }
-
     }
 }

@@ -61,7 +61,7 @@
                 </StackPanel>
             </Expander>
                 <Button Content="Logout" Name="logoutButton" Click="logoutButton_Click" Canvas.Left="896" Canvas.Top="8" Width="77" Height="23" />
-                <Button Content="Help" Height="23" Name="button2" Width="75" Canvas.Left="815" Canvas.Top="8" />
+                <Button Content="Help" Height="23" Name="button2" Width="75" Canvas.Left="815" Canvas.Top="8" Click="button2_Click_1" />
             </Canvas>
         </Grid>
     </ScrollViewer>
