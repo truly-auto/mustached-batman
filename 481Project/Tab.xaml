@@ -13,7 +13,7 @@
             <Image Height="84" HorizontalAlignment="Left" Margin="31,6,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="110" Source="/481Project;component/Images/1242115138_405.jpg" />
             <Label Content="Team Slogan! Go team go!!" Height="40" HorizontalAlignment="Left" Margin="754,32,0,0" Name="label1" VerticalAlignment="Top" Width="259" FontSize="20" />
             <my:Roster HorizontalAlignment="Left" x:Name="roster1" Height="558" VerticalAlignment="Bottom" Margin="2,0,0,-568" />
-                <my:Calendar HorizontalAlignment="Left" Margin="224,0,0,-562" x:Name="calendar1" VerticalAlignment="Bottom" Width="542" Height="620" />
+                <my:Calendar HorizontalAlignment="Left" Margin="229,67,0,-587" x:Name="calendar1" Width="542" />
             </Grid>
         <my1:Messages HorizontalAlignment="Left" Margin="0,674,0,0" x:Name="messages1" VerticalAlignment="Top" />
             <my:Stats Height="558" HorizontalAlignment="Left" Margin="752,0,0,402" x:Name="stats1" VerticalAlignment="Bottom" Width="244" Loaded="stats1_Loaded" />

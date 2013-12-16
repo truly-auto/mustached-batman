@@ -7,7 +7,7 @@
         <Button Content="Login" Height="23" HorizontalAlignment="Left" Margin="167,239,0,0" Name="confirmButton" VerticalAlignment="Top" Width="75" Click="confirmButton_Click" />
         <Button Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="269,239,0,0" Name="cancelButton" VerticalAlignment="Top" Width="75" Click="cancelButton_Click" />
         <TextBox Height="27" HorizontalAlignment="Left" Margin="85,131,0,0" Name="textBox1" VerticalAlignment="Top" Width="259" Background="#FFF8F889" />
-        <Label Content="Username" Height="28" HorizontalAlignment="Left" Margin="11,131,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Email" Height="28" HorizontalAlignment="Left" Margin="11,131,0,0" Name="label1" VerticalAlignment="Top" />
         <Label Content="Password" Height="28" HorizontalAlignment="Left" Margin="14,185,0,0" Name="label2" VerticalAlignment="Top" />
         <Label Content="Login Page" Height="65" HorizontalAlignment="Left" Margin="85,21,0,0" Name="label3" VerticalAlignment="Top" Width="259" FontSize="36" Background="#FFF8F889" HorizontalContentAlignment="Center" />
         <Label Background="#FFF8F889" Content="Create Account" FontSize="36" Height="65" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="571,21,0,0" Name="label4" VerticalAlignment="Top" Width="259" />
@@ -20,5 +20,6 @@
         <PasswordBox Background="#FFF8F889" Height="28" HorizontalAlignment="Left" Margin="571,189,0,0" Name="passwordBox2" VerticalAlignment="Top" Width="259" />
         <PasswordBox Background="#FFF8F889" Height="28" HorizontalAlignment="Left" Margin="571,242,0,0" Name="passwordBox3" VerticalAlignment="Top" Width="259" />
         <Label Content="Enter Password" Height="28" HorizontalAlignment="Left" Margin="455,189,0,0" Name="label8" VerticalAlignment="Top" Target="{Binding}" />
+        <TextBlock Height="14" HorizontalAlignment="Left" Margin="85,268,0,0" Name="textBlock1" Text="" VerticalAlignment="Top" Width="259" />
     </Grid>
 </Window>

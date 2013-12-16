@@ -7,11 +7,11 @@
         <Grid Width="1024" Height="790" VerticalAlignment="Top">
             <TabControl Height="681" Name="tabControl1" Width="1024">
                 <TabItem Header="Team 1" Name="tabItem1" Height="20" Width="100" Loaded="tabItem1_Loaded">
-                    <my:Tab x:Name="tab1" Width="1024" />
+                    <my:Tab x:Name="tab1" Width="1020" />
                 </TabItem>
                 <TabItem Header="Add/Create Team">
                     <Grid Height="605" Name="grid1" Width="930">
-                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="63,115,0,0" Name="textBlock2" Text="Pending Teams" VerticalAlignment="Top" Width="89" FontWeight="Bold" />
+                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="63,115,0,0" Name="textBlock2" Text="Pending Teams Invites" VerticalAlignment="Top" Width="133" FontWeight="Bold" />
                         <ScrollViewer Height="102" HorizontalAlignment="Left" Margin="63,159,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="259" Background="#FFC7FFFE" ToolTip="Tooltip">
                             <TextBlock Height="26" Name="textBlock10" Text="Invite One" Width="Auto" VerticalAlignment="Top" />
                         </ScrollViewer>
@@ -29,7 +29,7 @@
                         <Button Content="Ignore" Height="23" HorizontalAlignment="Left" Margin="261,298,0,0" Name="button4" VerticalAlignment="Top" Width="75" />
                         <Button Content="Accept" Height="23" HorizontalAlignment="Left" Margin="171,298,0,0" Name="button5" VerticalAlignment="Top" Width="75" />
                         <TextBox Background="#FFFCAEEE" Height="23" HorizontalAlignment="Left" Margin="585,326,0,0" Name="textBox2" VerticalAlignment="Top" Width="212" />
-                        <Label Content="Sport or Activity :" Height="35" HorizontalAlignment="Left" Margin="585,297,0,0" Name="label2" VerticalAlignment="Top" Width="109" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" />
+                        <Label Content="Slogan:" Height="35" HorizontalAlignment="Left" Margin="585,297,0,0" Name="label2" VerticalAlignment="Top" Width="109" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" />
                         <TextBox Background="#FFFCAEEE" Height="67" HorizontalAlignment="Left" Margin="583,390,0,0" Name="textBox4" VerticalAlignment="Top" Width="212" />
                         <Label Content="Description :" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="583,361,0,0" Name="label4" VerticalAlignment="Top" VerticalContentAlignment="Top" Width="109" />
                         <TextBlock Height="132" HorizontalAlignment="Left" Margin="63,391,0,0" Name="textBlock13" Text="" VerticalAlignment="Top" Width="284" Background="#FFC7FFFE"><TextBlock.ContextMenu><ContextMenu /></TextBlock.ContextMenu></TextBlock>
