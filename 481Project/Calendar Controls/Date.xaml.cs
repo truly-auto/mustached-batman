@@ -31,19 +31,22 @@ namespace _481Project
             InitializeComponent();
         }
 
-        private void UpdateDayColour(List<String> s) 
+        public void UpdateDayColour() 
         {
             var bc = new BrushConverter();             
-            foreach (string str in s) 
+            foreach (string str in Events) 
             {
-                if (str.Contains("Game"))
+                if (str.Contains("Event"))
                 {
-
-                    this.Background = (Brush)bc.ConvertFrom("#FF40CC00");
+                    this.Background = (Brush)bc.ConvertFrom("#FF24AFD8");
                 }
                 else if (str.Contains("Practice")) 
                 {
-
+                    this.Background = (Brush)bc.ConvertFrom("#FFEBBD18");
+                }
+                else if (str.Contains("Game")) 
+                {
+                    this.Background = (Brush)bc.ConvertFrom("#FF40CC00");
                 }
             }
         }
@@ -52,12 +55,15 @@ namespace _481Project
         {
             //Use this to open up our modal window.
             String text = this.Day.Text;
-            int num = Convert.ToInt32(text);
-            text = getDay(num);
-            var EditWindow = new EditCalendarWindow(this, text);
-            EditWindow.ShowDialog();
- 
-        }
+            try
+            {
+                int num = Convert.ToInt32(text);
+                text = getDay(num);
+                var EditWindow = new EditCalendarWindow(this, text);
+                EditWindow.ShowDialog();
+            }
+            catch (FormatException d){}
+         }
 
         private void border1_MouseEnter(object sender, MouseEventArgs e)
         {

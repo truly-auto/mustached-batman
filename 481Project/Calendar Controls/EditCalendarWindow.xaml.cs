@@ -18,24 +18,29 @@ namespace _481Project.Calendar_Controls
     /// </summary>
     public partial class EditCalendarWindow : Window
     {
-        private int CurrentDay = 16;
+        private int CurrentDay = System.DateTime.Now.Day;
         private Date owner;
 
         public EditCalendarWindow(Date d,String text)
         {
             InitializeComponent();
-            //Disables interaction if day from the past.
-            if (CurrentDay < 16)
+            
+            try 
             {
-                comboBox1.IsEnabled = false;
-                textBox1.IsEnabled = false;
-                textBox2.IsEnabled = false;
-                button2.IsEnabled = false;
-                button4.IsEnabled = false;
-                radioButton1.IsEnabled = false;
-                radioButton2.IsEnabled = false;
-                radioButton3.IsEnabled = false;
+                int day = Convert.ToInt32(owner.Day.Text);
+                if (CurrentDay > day)
+                {
+                    comboBox1.IsEnabled = false;
+                    textBox1.IsEnabled = false;
+                    textBox2.IsEnabled = false;
+                    button2.IsEnabled = false;
+                    button4.IsEnabled = false;
+                    radioButton1.IsEnabled = false;
+                    radioButton2.IsEnabled = false;
+                    radioButton3.IsEnabled = false;
+                }
             }
+            catch (NullReferenceException e) { }
 
             owner = d;
             this.label1.Content = text;
@@ -70,6 +75,7 @@ namespace _481Project.Calendar_Controls
 
         private void cancel_Click(object sender, RoutedEventArgs e)
         {
+            owner.UpdateDayColour();
             this.Close();
         }
 
@@ -136,8 +142,10 @@ namespace _481Project.Calendar_Controls
             foreach (EventUC evnt in removeEvent)
             {
                 stackPanel.Children.Remove(evnt);
+                owner.Events.Remove(evnt.textBlock1.Text);
             }
-
+            var bc = new BrushConverter();
+            owner.Background = (Brush)bc.ConvertFrom("#FFFFFFFF");
             button4.IsEnabled = false;
            
         }        
