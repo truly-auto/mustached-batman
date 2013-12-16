@@ -28,5 +28,46 @@ namespace _481Project.Profile
         {
             this.Close();
         }
+
+        private void facebookCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            facebookUsername.IsEnabled = true;
+            facebookPassword.IsEnabled = true;
+
+        }
+
+        private void facebookCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            facebookUsername.IsEnabled = false;
+            facebookPassword.IsEnabled = false;
+        }
+
+        private void twitterCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            twitterUsername.IsEnabled = true;
+            twitterPassword.IsEnabled = true;
+
+        }
+
+        private void twitterCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            twitterUsername.IsEnabled = false;
+            twitterPassword.IsEnabled = false;
+        }
+
+        private void googleCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            googleUsername.IsEnabled = true;
+            googlePassword.IsEnabled = true;
+
+        }
+
+        private void googleCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            googleUsername.IsEnabled = false;
+            googlePassword.IsEnabled = false;
+        }
+
+
     }
 }
