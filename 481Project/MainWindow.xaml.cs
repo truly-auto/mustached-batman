@@ -28,6 +28,10 @@ namespace _481Project
 
             //call the login procedure
             login();
+
+            //Simulate somethings
+                //Pending Team Invites
+                pendingTeams.Items.Add("TeamOne");
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -154,6 +158,33 @@ namespace _481Project
         {
             HelpWindow helpWindow = new HelpWindow();
             helpWindow.Show();
+        }
+
+        private void pendingTeams_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (pendingTeams.HasItems)
+            {
+                acceptTeam.IsEnabled = true;
+                ignoreTeam.IsEnabled = true;
+            }
+        }
+
+        private void acceptTeam_Click(object sender, RoutedEventArgs e)
+        {
+            //add to tabs
+
+        }
+
+        private void ignoreTeam_Click(object sender, RoutedEventArgs e)
+        {
+            //remove from list
+            Object a = pendingTeams.SelectedItem;
+
+            string s = "You removed " + a.ToString();
+            this.textBlock2.Text = s;
+            this.textBlock2.Foreground = Brushes.Red;
+
+            pendingTeams.Items.Remove(a);   
         }
 
      }

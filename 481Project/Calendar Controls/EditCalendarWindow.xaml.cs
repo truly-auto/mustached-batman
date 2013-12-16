@@ -149,6 +149,7 @@ namespace _481Project.Calendar_Controls
             this.textBlock2.Text = s;
             this.textBlock2.Foreground = Brushes.Red;
 
+            owner.Events.Remove(a.ToString());
             listBox1.Items.Remove(a);
 
             button4.IsEnabled = false;
