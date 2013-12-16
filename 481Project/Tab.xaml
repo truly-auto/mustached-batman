@@ -9,7 +9,7 @@
     <Grid Height="1064" Name="grid1" Width="1024">
         <Grid Background="#FFEFB859" Height="100" Margin="-2,0,2,0" Name="grid2" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="1024">
                 <Label Content="Team Banner" FontSize="32" Height="100" HorizontalAlignment="Center" Margin="406,-5,382,5" Name="bannerTitle" VerticalAlignment="Center" Width="236" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-            <Button Content="Team Information" Height="25" HorizontalAlignment="Right" Margin="0,6,35,0" Name="teamInformation" VerticalAlignment="Top" Width="130" Visibility="Visible" />
+            <Button Content="Team Information" Height="25" HorizontalAlignment="Right" Margin="0,6,35,0" Name="teamInformation" VerticalAlignment="Top" Width="130" Visibility="Visible" Click="teamInformation_Click" />
             <Image Height="84" HorizontalAlignment="Left" Margin="31,6,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="110" Source="/481Project;component/Images/1242115138_405.jpg" />
             <Label Content="Team Slogan! Go team go!!" Height="40" HorizontalAlignment="Left" Margin="754,32,0,0" Name="label1" VerticalAlignment="Top" Width="259" FontSize="20" />
             <my:Roster HorizontalAlignment="Left" x:Name="roster1" Height="558" VerticalAlignment="Bottom" Margin="2,0,0,-568" />

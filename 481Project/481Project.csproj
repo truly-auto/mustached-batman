@@ -126,6 +126,9 @@
     <Compile Include="Calendar Controls\WeekDay.xaml.cs">
       <DependentUpon>WeekDay.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TeamInfo.xaml.cs">
+      <DependentUpon>TeamInfo.xaml</DependentUpon>
+    </Compile>
     <Page Include="Calendar Controls\EditCalendarWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -227,6 +230,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Calendar Controls\WeekDay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TeamInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

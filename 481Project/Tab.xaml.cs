@@ -19,14 +19,37 @@ namespace _481Project
     /// </summary>
     public partial class Tab : UserControl
     {
-        public Tab()
+
+        public string Description;
+        public TabItem ti;
+
+        public Tab() 
         {
+            InitializeComponent();
+        }
+
+        public Tab(TabItem t)
+        {
+            ti = t;
             InitializeComponent();
         }
 
         private void stats1_Loaded(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void teamInformation_Click(object sender, RoutedEventArgs e)
+        {
+            TeamInfo ti = new TeamInfo(this);
+            var p = new Point();
+            ti.Top = this.grid2.PointToScreen(p).Y;
+            ti.Left = this.grid2.PointToScreen(p).X;
+            ti.textBox1.Text = (string)this.bannerTitle.Content;
+            ti.textBox2.Text = (string)this.label1.Content;
+            ti.textBox4.Text = Description;
+            ti.image1 = this.image1;
+            ti.ShowDialog();
         }
 
     }

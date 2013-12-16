@@ -57,7 +57,7 @@ namespace _481Project
         private void teamCreateButton_Click(object sender, RoutedEventArgs e)
         {
             TabItem ti = new TabItem();
-            Tab t = new Tab();
+            Tab t = new Tab(ti);
             ti.Header = this.textBox1.Text;
             t.bannerTitle.Content = this.textBox1.Text;
             ti.Content  = t;
