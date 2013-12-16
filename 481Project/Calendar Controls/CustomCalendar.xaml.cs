@@ -45,6 +45,8 @@ namespace _481Project
             date14.Day.Text = "14";
             date15.Day.Text = "15";
             date16.Day.Text = "16";
+            date16.Day.Background = Brushes.Black;
+            date16.Day.Foreground = Brushes.White;
             date17.Day.Text = "17";
             date18.Day.Text = "18";
             date19.Day.Text = "19";

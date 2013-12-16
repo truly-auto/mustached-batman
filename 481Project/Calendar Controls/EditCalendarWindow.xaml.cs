@@ -127,6 +127,7 @@ namespace _481Project.Calendar_Controls
             textBox2.Text = "";
             textBox1.Text = "";
             textBlock1.Text = "";
+            textBlock2.Text = "";
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)
@@ -143,6 +144,9 @@ namespace _481Project.Calendar_Controls
             {
                 stackPanel.Children.Remove(evnt);
                 owner.Events.Remove(evnt.textBlock1.Text);
+                string s ="You removed "+evnt.textBlock1.Text;
+                this.textBlock2.Text = s;
+                this.textBlock2.Foreground = Brushes.Red;
             }
             var bc = new BrushConverter();
             owner.Background = (Brush)bc.ConvertFrom("#FFFFFFFF");
