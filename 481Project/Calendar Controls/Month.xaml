@@ -6,8 +6,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="55" d:DesignWidth="420">
     <Grid Height="55" Width="420" >
-        <Button Content="Previous Month" Height="25" HorizontalAlignment="Left" Margin="12,18,0,0" Name="button1" VerticalAlignment="Top" Width="100" Click="button1_Click" />
-        <Button Content="Next Month" Height="25" HorizontalAlignment="Right" Margin="0,18,12,0" Name="button2" VerticalAlignment="Top" Width="100" Click="button2_Click" />
+        <Button Content="Previous Month" Height="25" HorizontalAlignment="Left" Margin="12,18,0,0" Name="button1" VerticalAlignment="Top" Width="100" Click="button1_Click" ToolTip="Previous month, coming soon!" />
+        <Button Content="Next Month" Height="25" HorizontalAlignment="Right" Margin="0,18,12,0" Name="button2" VerticalAlignment="Top" Width="100" Click="button2_Click" ToolTip="Next month, coming soon!" />
         <Label Content="November" Height="48" HorizontalAlignment="Left" Margin="118,5,0,0" Name="label1" VerticalAlignment="Top" Width="184" FontWeight="Bold" FontSize="24" HorizontalContentAlignment="Center" />
     </Grid>
 </UserControl>
