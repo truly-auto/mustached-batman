@@ -30,6 +30,13 @@ namespace _481Project.Calendar_Controls
         private void checkBox1_Checked(object sender, RoutedEventArgs e)
         {
             edit.button4.IsEnabled = true;
+            edit.ShareButton.IsEnabled = true;
+        }
+
+        private void checkBox1_Unchecked(object sender, RoutedEventArgs e)
+        {
+            edit.button4.IsEnabled = false;
+            edit.ShareButton.IsEnabled = false;
         }
     }
 }

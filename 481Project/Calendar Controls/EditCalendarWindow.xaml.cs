@@ -147,7 +147,8 @@ namespace _481Project.Calendar_Controls
             {
                 if (evnt.checkBox1.IsChecked == true) 
                 {
-                    removeEvent.Add(evnt); 
+                    removeEvent.Add(evnt);
+                    ShareButton.IsEnabled = false;
                 }
             }
             foreach (EventUC evnt in removeEvent)
@@ -162,6 +163,17 @@ namespace _481Project.Calendar_Controls
             owner.Background = (Brush)bc.ConvertFrom("#FFFFFFFF");
             button4.IsEnabled = false;
            
+        }
+
+        private void ShareButton_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (EventUC evnt in stackPanel.Children)
+            {
+                string s = evnt.textBlock1.Text + " has been Shared!";
+                this.textBlock2.Text = s;
+                this.textBlock2.Foreground = Brushes.Green;
+
+            }
         }        
 
     }
