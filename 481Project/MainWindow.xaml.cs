@@ -60,11 +60,13 @@ namespace _481Project
             ti.Header = this.textBox1.Text;
             t.bannerTitle.Content = this.textBox1.Text;
             ti.Content  = t;
+            t.label1.Content = this.textBox2.Text;
             
             this.tabControl1.Items.Insert(tabControl1.Items.Count - 1, ti);
             
             //After a new team is created, clear the name textbox
             this.textBox1.Text = "";
+            this.textBox2.Text = "";
         }
 
         /// <summary>

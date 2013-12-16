@@ -6,12 +6,14 @@
              mc:Ignorable="d" d:DesignHeight="540" d:DesignWidth="250">
     <Grid Height="Auto" Width="Auto">
         <Label Content="Roster" Height="57" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" Width="138" FontSize="32" FontWeight="Bold" />
-        <ScrollViewer Height="450" HorizontalAlignment="Left" Margin="12,65,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="222" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
-            <StackPanel Height="Auto" Name="stackPanel" Width="Auto" Background="#FFDBBFBF">
+        <ScrollViewer Height="367" HorizontalAlignment="Left" Margin="12,148,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="222" VerticalScrollBarVisibility="Visible" CanContentScroll="True">
+            <StackPanel Height="368" Name="stackPanel" Width="Auto" Background="#FFDBBFBF">
                 <StackPanel Height="Auto" Name="stackPanel1" Width="Auto" />
             </StackPanel>
         </ScrollViewer>
-        <Button Content="+" Height="23" HorizontalAlignment="Left" Margin="169,35,0,0" Name="button1" VerticalAlignment="Top" Width="27" Background="#FF65E265" Click="button1_Click" ToolTip="Opens a Window to Invite Player to Team" />
-        <Button Background="#FFCB1A1A" Content="-" Height="23" HorizontalAlignment="Left" Margin="201,35,0,0" Name="button2" VerticalAlignment="Top" Width="27" Click="button2_Click" ToolTip="Opens a Window to Remove Player From Team" />
+        <Button Content="+" Height="23" HorizontalAlignment="Left" Margin="211,94,0,0" Name="button1" VerticalAlignment="Top" Width="27" Background="#FF65E265" Click="button1_Click" ToolTip="Opens a Window to Invite Player to Team" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,95,0,0" Name="emailTextbox" VerticalAlignment="Top" Width="193" />
+        <Label Content="Player e-mail :" Height="24" HorizontalAlignment="Left" Margin="12,65,0,0" Name="label2" VerticalAlignment="Top" Width="89" />
+        <Label Content="Player has been invited to your team" Height="28" HorizontalAlignment="Left" Margin="12,114,0,0" Name="playerAddedLabel" VerticalAlignment="Top" Foreground="#FF00775F" Visibility="Hidden" />
     </Grid>
 </UserControl>

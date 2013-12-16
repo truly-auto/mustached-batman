@@ -23,5 +23,10 @@ namespace _481Project.Images
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = System.Windows.Visibility.Hidden;
+        }
     }
 }

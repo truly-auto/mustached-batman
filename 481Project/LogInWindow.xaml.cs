@@ -25,7 +25,16 @@ namespace _481Project
 
         private void confirmButton_Click(object sender, RoutedEventArgs e)
         {
-            DialogResult = true;
+         //   if (textBox1.Text == "admin" && passwordBox1.Password == "admin")
+           // {
+                DialogResult = true;
+           // }
+            //else 
+            //{
+             //   string s = "Incorrect password and/or email.";
+              //  textBlock1.Text = s;
+               // textBlock1.Foreground = Brushes.Red;
+            //}
         }
 
         private void cancelButton_Click(object sender, RoutedEventArgs e)
