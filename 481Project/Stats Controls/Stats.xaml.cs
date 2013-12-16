@@ -26,11 +26,16 @@ namespace _481Project
 
         private void add_Click(object sender, RoutedEventArgs e)
         {
+            if (String.IsNullOrEmpty(StatDatePicker.Text) || String.IsNullOrEmpty(opponentTextbox.Text) || String.IsNullOrEmpty(ScoreTextbox.Text))
+            {
+                return;
+            }
             string c = this.stackPanel.Children.Count.ToString();                 //Gets number of elements from stackPanel
             TextBlock b = new TextBlock();                                              //TODO: Make acutal player elements 
-            b.Text = "Fake Stats " + c;
+            b.Text = StatDatePicker.SelectedDate.Value.Date.ToString("dd/MM/yyyy") + "  " + opponentTextbox.Text + " " + ScoreTextbox.Text;
             this.stackPanel.Children.Add(b);
 
+            StatDatePicker.Text = opponentTextbox.Text = ScoreTextbox.Text = "";
         }
 
         private void remove_Click(object sender, RoutedEventArgs e)
@@ -43,6 +48,21 @@ namespace _481Project
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ScoreTextbox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            CheckIsNumeric(e);
+        }
+
+        private void CheckIsNumeric(TextCompositionEventArgs e)
+        {
+            int result;
+
+            if (!(int.TryParse(e.Text, out result) || e.Text == "/"))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
