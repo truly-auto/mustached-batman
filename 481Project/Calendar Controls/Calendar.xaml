@@ -3,14 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" d:DesignHeight="614" d:DesignWidth="696" xmlns:my="clr-namespace:_481Project.Calendar_Controls" xmlns:my1="clr-namespace:_481Project" >
-    <Grid Height="Auto" Name="grid1" Width="Auto">
-        <WrapPanel Height="385" Margin="198,77,0,152" Name="wrapPanel1" Width="420">
+             mc:Ignorable="d" d:DesignHeight="614" d:DesignWidth="472" xmlns:my="clr-namespace:_481Project.Calendar_Controls" xmlns:my1="clr-namespace:_481Project" >
+    <Grid Height="Auto" Name="grid1" Width="473">
+        <WrapPanel Height="385" Margin="30,48,0,181" Name="wrapPanel1" Width="420" HorizontalAlignment="Left">
             <my:Month x:Name="month1" />
             <my1:CustomCalendar x:Name="customCalendar1" />
         </WrapPanel>
-        <my:Legend HorizontalAlignment="Left" Margin="12,122,0,0" x:Name="legend1" VerticalAlignment="Top" Height="172" Width="219" />
-        <Label Content="Legend" Height="36" HorizontalAlignment="Stretch" Margin="53,87,503,0" Name="label1" VerticalAlignment="Top" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
-        <Button Content="Sync with Accounts" Height="32" HorizontalAlignment="Stretch" Margin="520,492,40,90" Name="button1" ToolTip="Syncs Calendar with all Accounts" VerticalAlignment="Stretch" Width="137" />
+        <my:Legend HorizontalAlignment="Left" Margin="30,472,0,0" x:Name="legend1" VerticalAlignment="Top" Height="69" Width="210" />
+        <Label Content="Legend" Height="36" HorizontalAlignment="Left" Margin="30,439,0,0" Name="label1" VerticalAlignment="Top" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="97" />
+        <Button Content="Sync with Accounts" Height="32" HorizontalAlignment="Stretch" Margin="338,472,23,110" Name="button1" ToolTip="Syncs Calendar with all Accounts" VerticalAlignment="Stretch" />
     </Grid>
 </UserControl>

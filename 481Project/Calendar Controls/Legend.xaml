@@ -4,15 +4,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="257" d:DesignWidth="181">
-    <Grid Width="163" Height="151">
+             d:DesignHeight="90" d:DesignWidth="301">
+    <Grid Width="250" Height="72">
         <Rectangle Height="20" HorizontalAlignment="Left" Margin="14,16,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="20" Fill="#FF40CC00" />
-        <Rectangle HorizontalAlignment="Left" Margin="14,0,0,89" Name="rectangle2" Stroke="Black" Width="20" Fill="#FF24AFD8" Height="20" VerticalAlignment="Bottom" />
-        <Rectangle Height="20" HorizontalAlignment="Left" Margin="14,0,0,63" Name="rectangle3" Stroke="Black" VerticalAlignment="Bottom" Width="20" Fill="#FFEBBD18" />
-        <Rectangle Height="20" HorizontalAlignment="Left" Margin="14,94,0,0" Name="rectangle4" Stroke="Black" VerticalAlignment="Top" Width="20" Fill="#FFD85013" />
+        <Rectangle HorizontalAlignment="Left" Margin="14,42,0,0" Name="rectangle2" Stroke="Black" Width="20" Fill="#FF24AFD8" Height="20" VerticalAlignment="Top" />
+        <Rectangle Height="20" HorizontalAlignment="Left" Margin="101,16,0,0" Name="rectangle3" Stroke="Black" VerticalAlignment="Top" Width="20" Fill="#FFEBBD18" />
+        <Rectangle Height="20" HorizontalAlignment="Left" Margin="101,42,0,0" Name="rectangle4" Stroke="Black" VerticalAlignment="Top" Width="20" Fill="#FFD85013" />
         <Label Content="Game" Height="28" HorizontalAlignment="Left" Margin="39,8,0,0" Name="label1" VerticalAlignment="Top" Width="104" />
         <Label Content="Event" Height="28" HorizontalAlignment="Left" Margin="39,34,0,0" Name="label2" VerticalAlignment="Top" Width="104" />
-        <Label Content="Practice" Height="28" HorizontalAlignment="Left" Margin="39,60,0,0" Name="label3" VerticalAlignment="Top" Width="104" />
-        <Label Content="Conflict" Height="28" HorizontalAlignment="Left" Margin="39,86,0,0" Name="label4" VerticalAlignment="Top" Width="104" />
+        <Label Content="Practice" Height="28" HorizontalAlignment="Left" Margin="126,8,0,0" Name="label3" VerticalAlignment="Top" Width="104" />
+        <Label Content="Conflict" Height="28" HorizontalAlignment="Right" Margin="0,34,20,0" Name="label4" VerticalAlignment="Top" Width="104" />
     </Grid>
 </UserControl>
